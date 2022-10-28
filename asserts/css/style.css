@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+.input-box{
+    box-sizing: border-box;
+}
+
+.input-box img{
+    height: 20px;
+}
+.input-box input{
+    height: 32px;
+}
+body{
+
+}
+.hero-section-background{
+    background-image: url(/asserts/img/hero-image.png);
+    background-size: cover;
+    height:720px;
+}
+
+.row{
+    display: flex;
+}
+/*.title-logo {*/
+/*    color: #5562F7;*/
+/*    font-size: 24px;*/
+/*    font-weight: 700;*/
+/*}*/
+
+a {
+    text-decoration: none;
+}
+
+/*body{*/
+/*    background: gray;*/
+/*}*/
+
+/*header{*/
+/*    width: 100%;*/
+/*    padding: 12px calc(calc(100% - 1440px)/2);*/
+/*    background: white;*/
+/*}*/
+
+/*header .header-left-part{*/
+/*    display: flex;*/
+/*    line-height: 23px;*/
+/*    font-size: 15px;*/
+/*    color: white;*/
+/*}*/
+
+/*nav > ul {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    width: 100%;*/
+
+/*}*/
+
+/*nav {*/
+/*    max-width: 345px;*/
+/*    width: 80%;*/
+/*}*/
+
+/*nav > ul.menu {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    width: 100%;*/
+/*    font-size: .875rem;*/
+/*}*/
+
+/*ul.menu li a {*/
+/*    font-weight: 400;*/
+/*    letter-spacing: 0.1em;*/
+
+/*    color: #282E3E;*/
+/*}*/
+
