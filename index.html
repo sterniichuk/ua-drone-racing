@@ -22,13 +22,10 @@
         </nav>
     </div>
     <div class="header-right-part row">
-        <div class="search-wrapper">
-            <div class="input-box">
-                <input type="text" placeholder="Race, saver, fight...">
-                <span class="search-span">
-                    <img src="./asserts/img/search.svg" alt="Search logo">
-                </span>
-            </div>
+        <div class="search-input-box">
+            <input id="search-input" type="text" placeholder="Race, saver, fight...">
+            <span><img src="./asserts/img/search.svg" alt="Search"></span>
+            <label for="search-input"></label>
         </div>
         <div class="header-enter-buttons">
             <a href="log-in.html">
@@ -52,20 +49,22 @@
             <p>Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit. Integer non lorem ipsum.
                 commodo ipsum </p>
-            <button type="button" aria-label="Sign in now" class="sign-in-now-button">
-                <span>Sign in now </span>
+            <button type="button" aria-label="Sign in now" class="sign-in-now-button"
+                    onclick="location.href='log-in.html'">
+                <span>Sign in now</span>
             </button>
         </div>
     </section>
     <section id="benefits">
         <h2>Generally every track is bigger in 2 times than another in Ukraine!</h2>
-        <div class="row-in-benefits row">
+        <div id="benefits-content" class="row">
             <div class="info-block">
                 <h3>We have 7 kinds of drone <br>racing tournaments</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit. Integer non lorem ipsum.
                     commodo ipsum </p>
-                <button type="button" aria-label="Start" class="start-button">
+                <button type="button" aria-label="Start" class="start-button"
+                        onclick="location.href='log-in.html'">
                     <span>Start</span>
                 </button>
             </div>
@@ -83,15 +82,37 @@
                     commodo ipsum </p>
 
                 <div class="row more-join-block">
-                    <button type="button" aria-label="More" class="more-button">
+                    <button type="button" aria-label="More" class="more-button"
+                            onclick="location.href='#tournaments'">
                         <span>More</span>
                     </button>
-                    <button type="button" aria-label="Join" class="join-button">
+                    <button type="button" aria-label="Join" class="join-button"
+                            onclick="location.href='log-in.html'">
                         <span>Join</span>
                     </button>
                 </div>
             </div>
             <img src="./asserts/img/tournaments/fights.svg" alt="Drone fights with another drone">
+        </div>
+        <div id="firing" class="node row">
+            <div class="info-block">
+                <h3>Firing</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Integer non lorem ipsum.
+                    commodo ipsum </p>
+
+                <div class="row more-join-block">
+                    <button type="button" aria-label="More" class="more-button"
+                            onclick="location.href='#tournaments'">
+                        <span>More</span>
+                    </button>
+                    <button type="button" aria-label="Join" class="join-button"
+                            onclick="location.href='log-in.html'">
+                        <span>Join</span>
+                    </button>
+                </div>
+            </div>
+            <img src="./asserts/img/tournaments/firing.svg" alt="Military drone">
         </div>
         <div id="obstacle" class="node row">
             <div class="info-block">
@@ -101,17 +122,18 @@
                     commodo ipsum </p>
 
                 <div class="row more-join-block">
-                    <button type="button" aria-label="More" class="more-button">
+                    <button type="button" aria-label="More" class="more-button"
+                            onclick="location.href='#tournaments'">
                         <span>More</span>
                     </button>
-                    <button type="button" aria-label="Join" class="join-button">
+                    <button type="button" aria-label="Join" class="join-button"
+                            onclick="location.href='log-in.html'">
                         <span>Join</span>
                     </button>
                 </div>
             </div>
             <img src="./asserts/img/tournaments/obstacle.svg" alt="Drone flights through obstacle">
         </div>
-
         <div id="saver" class="node row">
             <div class="info-block">
                 <h3>Saver</h3>
@@ -120,17 +142,18 @@
                     commodo ipsum </p>
 
                 <div class="row more-join-block">
-                    <button type="button" aria-label="More" class="more-button">
+                    <button type="button" aria-label="More" class="more-button"
+                            onclick="location.href='#tournaments'">
                         <span>More</span>
                     </button>
-                    <button type="button" aria-label="Join" class="join-button">
+                    <button type="button" aria-label="Join" class="join-button"
+                            onclick="location.href='log-in.html'">
                         <span>Join</span>
                     </button>
                 </div>
             </div>
             <img src="./asserts/img/tournaments/saver.svg" alt="Drone with medic box">
         </div>
-
         <div id="race" class="node row">
             <div class="info-block">
                 <h3>Race</h3>
@@ -139,10 +162,12 @@
                     commodo ipsum </p>
 
                 <div class="row more-join-block">
-                    <button type="button" aria-label="More" class="more-button">
+                    <button type="button" aria-label="More" class="more-button"
+                            onclick="location.href='#tournaments'">
                         <span>More</span>
                     </button>
-                    <button type="button" aria-label="Join" class="join-button">
+                    <button type="button" aria-label="Join" class="join-button"
+                            onclick="location.href='log-in.html'">
                         <span>Join</span>
                     </button>
                 </div>
@@ -157,17 +182,18 @@
                     commodo ipsum </p>
 
                 <div class="row more-join-block">
-                    <button type="button" aria-label="More" class="more-button">
+                    <button type="button" aria-label="More" class="more-button"
+                            onclick="location.href='#tournaments'">
                         <span>More</span>
                     </button>
-                    <button type="button" aria-label="Join" class="join-button">
+                    <button type="button" aria-label="Join" class="join-button"
+                            onclick="location.href='log-in.html'">
                         <span>Join</span>
                     </button>
                 </div>
             </div>
             <img src="./asserts/img/tournaments/delivery.svg" alt="Drone transfers three pizza">
         </div>
-
         <div id="search" class="node row">
             <div class="info-block">
                 <h3>Search</h3>
@@ -176,10 +202,12 @@
                     commodo ipsum </p>
 
                 <div class="row more-join-block">
-                    <button type="button" aria-label="More" class="more-button">
+                    <button type="button" aria-label="More" class="more-button"
+                            onclick="location.href='#tournaments'">
                         <span>More</span>
                     </button>
-                    <button type="button" aria-label="Join" class="join-button">
+                    <button type="button" aria-label="Join" class="join-button"
+                            onclick="location.href='log-in.html'">
                         <span>Join</span>
                     </button>
                 </div>
@@ -190,13 +218,48 @@
         <div class="horizontal-scroll-bottom-area">
             <img src="./asserts/img/up-pointer.svg" alt="Pointer on tournament">
             <ul class="horizontal-scroll-list-of-tournaments row">
-                <li>Fights</li>
-                <li>Firing</li>
-                <li>Obstacle</li>
-                <li>Saver</li>
-                <li>Race</li>
-                <li>Delivery</li>
-                <li>Search</li>
+                <li>
+                    <button type="button" aria-label="Fights" class="node-button"
+                            onclick="location.href='#fights'">
+                        <span>Fights</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" aria-label="Firing" class="node-button"
+                            onclick="location.href='#firing'">
+                        <span>Firing</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" aria-label="Obstacle" class="node-button"
+                            onclick="location.href='#obstacle'">
+                        <span>Obstacle</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" aria-label="Saver" class="node-button"
+                            onclick="location.href='#saver'">
+                        <span>Saver</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" aria-label="Race" class="node-button"
+                            onclick="location.href='#race'">
+                        <span>Race</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" aria-label="Delivery" class="node-button"
+                            onclick="location.href='#delivery'">
+                        <span>Delivery</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" aria-label="Search" class="node-button"
+                            onclick="location.href='#search'">
+                        <span>Search</span>
+                    </button>
+                </li>
             </ul>
         </div>
     </section>
@@ -211,7 +274,6 @@
                 Autumn Tournament:
                 <time>22-25 October (16:00 - 22:00)</time>
             </p>
-            <p>
             <address>
                 <ul>
                     <li>3803565420</li>
@@ -220,11 +282,11 @@
                     <li>uadroneracing@lll.kpi.ua</li>
                 </ul>
             </address>
-            </p>
             <div class="row">
                 <ul>
                     <li>
-                        <button type="button" aria-label="Call" class="call-button">
+                        <button type="button" aria-label="Call" class="call-button"
+                                onclick="location.href='#details'">
                             <span>Call</span>
                         </button>
                     </li>
@@ -241,7 +303,7 @@
                 </ul>
             </div>
         </div>
-        <img src="asserts/img/place.png" alt="University in Kyiv">
+        <img src="asserts/img/place.svg" alt="University in Kyiv">
     </div>
 </footer>
 </body>

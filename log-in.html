@@ -48,62 +48,60 @@
     </section>
     <section id="content">
         <div id="select-social-media">
-            <div class="social-media-list-container">
-                <ul id="social-media-list-sign-up sign-up-is-selected">
-                    <li>
-                        <a href="https://google.com">
-                            <div class="row">
-                                <img src="asserts/img/social/google.svg" alt="Google logo">
-                                <div class="social-media-label">Continue with Google</div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://facebook.com">
-                            <div class="row">
-                                <img src="asserts/img/social/facebook.svg" alt="facebook logo">
-                                <div class="social-media-label">Continue with Facebook</div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://apple.com">
-                            <div class="row">
-                                <img src="asserts/img/social/apple.svg" alt="apple logo">
-                                <div class="social-media-label  sign-up-is-selected">Continue with Apple</div>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-                <ul id="social-media-list-log-in log-in-is-selected">
-                    <li>
-                        <a href="https://google.com">
-                            <div class="row">
-                                <img src="asserts/img/social/google.svg" alt="Google logo">
-                                <div class="social-media-label">Log in with Google</div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://facebook.com">
-                            <div class="row">
-                                <img src="asserts/img/social/facebook.svg" alt="facebook logo">
-                                <div class="social-media-label">Log in with Facebook</div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://apple.com">
-                            <div class="row">
-                                <img src="asserts/img/social/apple.svg" alt="apple logo">
-                                <div class="social-media-label">Log in with Apple</div>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+            <ul id="social-media-list-sign-up" class="sign-up-is-selected">
+                <li>
+                    <a href="https://google.com">
+                        <div class="row">
+                            <img src="asserts/img/social/google.svg" alt="Google logo">
+                            <div class="social-media-label">Continue with Google</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://facebook.com">
+                        <div class="row">
+                            <img src="asserts/img/social/facebook.svg" alt="facebook logo">
+                            <div class="social-media-label">Continue with Facebook</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://apple.com">
+                        <div class="row">
+                            <img src="asserts/img/social/apple.svg" alt="apple logo">
+                            <div class="social-media-label  sign-up-is-selected">Continue with Apple</div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul id="social-media-list-log-in " class="log-in-is-selected">
+                <li>
+                    <a href="https://google.com">
+                        <div class="row">
+                            <img src="asserts/img/social/google.svg" alt="Google logo">
+                            <div class="social-media-label">Log in with Google</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://facebook.com">
+                        <div class="row">
+                            <img src="asserts/img/social/facebook.svg" alt="facebook logo">
+                            <div class="social-media-label">Log in with Facebook</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://apple.com">
+                        <div class="row">
+                            <img src="asserts/img/social/apple.svg" alt="apple logo">
+                            <div class="social-media-label">Log in with Apple</div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
         </div>
-        <div id="separator-or-email" class="row">
+        <div id="separator-or-email" class="row sign-up-is-selected">
             <div class="UIDivider-separator">
                 <hr class="UIDivider-separatorLine">
             </div>
@@ -112,12 +110,13 @@
                 <hr class="UIDivider-separatorLine">
             </div>
         </div>
-        <form action="#" id="input-personal-data-container">
-            <fieldset>
-                <div id="birthday-wrapper" class="sign-up-is-selected">
-                    <legend class="birthday-legend">BIRTHDAY</legend>
-                    <div class="drop-down-box">
-                        <select aria-label="birth_month" class="UIDropdown-select" name="birth_month">
+        <div id="input-personal-data-container">
+            <div class="birthday-form-wrapper">
+                <form id="birthday-form" class="input-wrapper sign-up-is-selected">
+                    <fieldset class="row">
+                        <legend class="birthday-legend">BIRTHDAY</legend>
+                        <select id="birth-month-select" aria-label="birth_month" class="UIDropdown-select"
+                                name="birth_month">
                             <option value="-1">Month</option>
                             <option value="1">January</option>
                             <option value="2">February</option>
@@ -132,13 +131,186 @@
                             <option value="11">November</option>
                             <option value="12">December</option>
                         </select>
-                        <a href="#birthday-chevron-down">
-                            <img id="birthday-chevron-down" src="./asserts/img/log-in/chevron-down.svg" alt="Chevron down">
-                        </a>
-                    </div>
-                </div>
+                        <select id="birth-day-select" aria-label="birth_day" class="UIDropdown-select"
+                                name="birth_day">
+                            <option value="-1">Day</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+                        <select id="birth-year-select" aria-label="birth_year" class="UIDropdown-select"
+                                name="birth_year">
+                            <option value="-1">Year</option>
+                            <option>2022</option>
+                            <option>2021</option>
+                            <option>2020</option>
+                            <option>2019</option>
+                            <option>2018</option>
+                            <option>2017</option>
+                            <option>2016</option>
+                            <option>2015</option>
+                            <option>2014</option>
+                            <option>2013</option>
+                            <option>2012</option>
+                            <option>2011</option>
+                            <option>2010</option>
+                            <option>2009</option>
+                            <option>2008</option>
+                            <option>2007</option>
+                            <option>2006</option>
+                            <option>2005</option>
+                            <option>2004</option>
+                            <option>2003</option>
+                            <option>2002</option>
+                            <option>2001</option>
+                            <option>2000</option>
+                            <option>1999</option>
+                            <option>1998</option>
+                            <option>1997</option>
+                            <option>1996</option>
+                            <option>1995</option>
+                            <option>1994</option>
+                            <option>1993</option>
+                            <option>1992</option>
+                            <option>1991</option>
+                            <option>1990</option>
+                            <option>1989</option>
+                            <option>1988</option>
+                            <option>1987</option>
+                            <option>1986</option>
+                            <option>1985</option>
+                            <option>1984</option>
+                            <option>1983</option>
+                            <option>1982</option>
+                            <option>1981</option>
+                            <option>1980</option>
+                            <option>1979</option>
+                            <option>1978</option>
+                            <option>1977</option>
+                            <option>1976</option>
+                            <option>1975</option>
+                            <option>1974</option>
+                            <option>1973</option>
+                            <option>1972</option>
+                            <option>1971</option>
+                            <option>1970</option>
+                            <option>1969</option>
+                            <option>1968</option>
+                            <option>1967</option>
+                            <option>1966</option>
+                            <option>1965</option>
+                            <option>1964</option>
+                            <option>1963</option>
+                            <option>1962</option>
+                            <option>1961</option>
+                            <option>1960</option>
+                            <option>1959</option>
+                            <option>1958</option>
+                            <option>1957</option>
+                            <option>1956</option>
+                            <option>1955</option>
+                            <option>1954</option>
+                            <option>1953</option>
+                            <option>1952</option>
+                            <option>1951</option>
+                            <option>1950</option>
+                            <option>1949</option>
+                            <option>1948</option>
+                            <option>1947</option>
+                            <option>1946</option>
+                            <option>1945</option>
+                            <option>1944</option>
+                            <option>1943</option>
+                            <option>1942</option>
+                            <option>1941</option>
+                            <option>1940</option>
+                            <option>1939</option>
+                            <option>1938</option>
+                            <option>1937</option>
+                            <option>1936</option>
+                            <option>1935</option>
+                            <option>1934</option>
+                            <option>1933</option>
+                            <option>1932</option>
+                            <option>1931</option>
+                            <option>1930</option>
+                            <option>1929</option>
+                            <option>1928</option>
+                            <option>1927</option>
+                            <option>1926</option>
+                            <option>1925</option>
+                            <option>1924</option>
+                            <option>1923</option>
+                            <option>1922</option>
+                            <option>1921</option>
+                            <option>1920</option>
+                            <option>1919</option>
+                            <option>1918</option>
+                            <option>1917</option>
+                            <option>1916</option>
+                            <option>1915</option>
+                            <option>1914</option>
+                            <option>1913</option>
+                            <option>1912</option>
+                            <option>1911</option>
+                            <option>1910</option>
+                            <option>1909</option>
+                            <option>1908</option>
+                            <option>1907</option>
+                            <option>1906</option>
+                            <option>1905</option>
+                            <option>1904</option>
+                            <option>1903</option>
+                            <option>1902</option>
+                            <option>1901</option>
+                            <option>1900</option>
+                            <option>1899</option>
+                            <option>1898</option>
+                            <option>1897</option>
+                            <option>1896</option>
+                            <option>1895</option>
+                            <option>1894</option>
+                            <option>1893</option>
+                        </select>
+                        <button type="button" aria-label="Question"
+                                id="question-button"
+                                title="Question">
+                            <img src="./asserts/img/log-in/question-mark.svg" alt="Requirements to age">
+                        </button>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="down-part">
                 <div class="input-wrapper">
-                    <div class="input-and-underline-container">
+                    <div class="input-email-or-username">
                         <div class="input-name-wrapper  log-in-is-selected">
                             <input name="username"
                                    id="log-in-input"
@@ -147,10 +319,10 @@
                             <label for="log-in-input"></label>
                         </div>
                         <div class="input-name-wrapper sign-up-is-selected">
-                            <input name="username"
+                            <input name="email"
                                    id="sign-up-input"
                                    placeholder="Type your email address" spellcheck="false"
-                                   autocomplete="username" class="input-field" type="text" value="">
+                                   autocomplete="email" class="input-field" type="text" value="">
                             <label for="sign-up-input"></label>
                         </div>
                         <span class="UIInput-border"></span>
@@ -169,15 +341,10 @@
                     <span class="UIInput-border"></span>
                     <span class="UIInput-label">PASSWORD</span>
                 </div>
-
-            </fieldset>
-
-        </form>
-        <div class="click-area">
-            <div id="accept-wrapper">
-                <div id="check-box-wrapper" class="sign-up-is-selected">
-                    <input type="checkbox" id="accept" name="accept" checked>
-                    <label for="accept">
+                <div id="accept-wrapper">
+                    <div id="check-box-wrapper" class="sign-up-is-selected">
+                        <input type="checkbox" id="accept" name="accept" checked>
+                        <label for="accept">
                     <span class="UICheckbox-label">I accept  UA Drone Racing’s
                 <a class="UILink" data-testid="UILink-anchor"
                    href="https://docs.google.com/document/d/1Y_Mxn31nrZ38_PpYmBSYIofS6GhEZiHCo5UGD4ycfNM/edit#heading=h.q4l5me82eern"
@@ -185,32 +352,36 @@
                    title="Open the Terms of Service in a new window">
                 Terms of Service and Privacy Policy</a>
                 </span>
-                        <!-- target="_blank"	Opens the linked document in a new window or tab
-                        rel=”noopener” is an HTML attribute that can be added to external links. It prevents the opening page to gain any kind of access to the original page.
-                        -->
-                    </label>
-                </div>
-                <div id="log-in-accept" class="log-in-is-selected">
-                    <div class="UICheckbox-label">By tapping Log in, you accept UA Drone Racing’s
-                        <a class="UILink" data-testid="UILink-anchor"
-                           href="https://docs.google.com/document/d/1Y_Mxn31nrZ38_PpYmBSYIofS6GhEZiHCo5UGD4ycfNM/edit#heading=h.q4l5me82eern"
-                           rel="noopener" target="_blank"
-                           title="Open the Terms of Service in a new window">
-                            Terms of Service and Privacy Policy</a>
+                            <!-- target="_blank"	Opens the linked document in a new window or tab
+                            rel=”noopener” is an HTML attribute that can be added to external links. It prevents the opening page to gain any kind of access to the original page.
+                            -->
+                        </label>
+                    </div>
+                    <div id="log-in-accept" class="log-in-is-selected">
+                        <div class="UICheckbox-label">By tapping Log in, you accept UA Drone Racing’s
+                            <a class="UILink" data-testid="UILink-anchor"
+                               href="https://docs.google.com/document/d/1Y_Mxn31nrZ38_PpYmBSYIofS6GhEZiHCo5UGD4ycfNM/edit#heading=h.q4l5me82eern"
+                               rel="noopener" target="_blank"
+                               title="Open the Terms of Service in a new window">
+                                Terms of Service and Privacy Policy</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div id="buttons-wrapper">
-                <a href="#" class="log-in-is-selected">
-                    <button id="log-in-button" type="button" aria-label="Log in" class="button">
-                        <span>Log in</span>
-                    </button>
-                </a>
-                <a href="#" class="log-in-is-selected">
-                    <button id="sign-up-button" type="button" aria-label="Sign up" class="button">
-                        <span>Sign up</span>
-                    </button>
-                </a>
+                <div class="click-area">
+
+                    <div id="buttons-wrapper">
+                        <a href="#" class="log-in-is-selected">
+                            <button id="log-in-button" type="button" aria-label="Log in" class="button">
+                                <span>Log in</span>
+                            </button>
+                        </a>
+                        <a href="#" class="sign-up-is-selected">
+                            <button id="sign-up-button" type="button" aria-label="Sign up" class="button">
+                                <span>Sign up</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

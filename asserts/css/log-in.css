@@ -14,6 +14,10 @@ a {
     text-decoration: none;
 }
 
+#select-social-media img{
+    width: 30px;
+}
+
 .UIInput-border {
     align-self: flex-end;
     box-shadow: 0 0.125rem 0 0 black;
@@ -30,6 +34,14 @@ a {
     /*display: none;*/
 }
 
+#question-button{
+    min-width: 25px;
+    background: none;
+    border: none;
+}
+
+
+
 .sign-up-is-selected {
     /*display: none;*/
 }
@@ -41,6 +53,10 @@ a {
 
 fieldset {
     border: none;
+}
+
+.chevron-down-chevron{
+    width: 10px;
 }
 
 .UIDivider-separatorLine {
