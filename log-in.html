@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no,
+          initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./asserts/css/log-in.css">
+    <title>Start session</title>
+</head>
+<body>
+<header class="row">
+    <div class="switch-wrapper">
+        <div class="switch row">
+            <div>
+                <input type="radio" id="sign-up-radio-button"
+                       name="radio-button" value="sign-up" checked>
+                <label for="sign-up-radio-button">Sign-up</label>
+                <div class="sign-up-is-selected">
+                    <img src="./asserts/img/log-in/yellow-underline.svg" alt="underline of switch">
+                </div>
+            </div>
+            <div>
+                <input type="radio" id="log-in-radio-button" name="radio-button" value="log-in">
+                <label for="log-in-radio-button">Log-in</label>
+                <div class="log-in-is-selected">
+                    <img src="./asserts/img/log-in/yellow-underline.svg" alt="underline of switch">
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="index.html">
+        <img alt="Back to Home button" src="./asserts/img/log-in/close-button.svg"
+             width=14" height="14">
+    </a>
+
+</header>
+
+<main class="row">
+    <section id="hero-image-wrapper" class="desktop">
+        <div class="sign-up-is-selected">
+            <img src="./asserts/img/log-in/sign-up.svg" class="hero-image" alt="laptop">
+        </div>
+        <div class="log-in-is-selected">
+            <img src="asserts/img/log-in/log-in.svg" class="hero-image" alt="laptop">
+        </div>
+    </section>
+    <section id="content">
+        <div id="select-social-media">
+            <div class="social-media-list-container">
+                <ul id="social-media-list-sign-up sign-up-is-selected">
+                    <li>
+                        <a href="https://google.com">
+                            <div class="row">
+                                <img src="asserts/img/social/google.svg" alt="Google logo">
+                                <div class="social-media-label">Continue with Google</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://facebook.com">
+                            <div class="row">
+                                <img src="asserts/img/social/facebook.svg" alt="facebook logo">
+                                <div class="social-media-label">Continue with Facebook</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://apple.com">
+                            <div class="row">
+                                <img src="asserts/img/social/apple.svg" alt="apple logo">
+                                <div class="social-media-label  sign-up-is-selected">Continue with Apple</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <ul id="social-media-list-log-in log-in-is-selected">
+                    <li>
+                        <a href="https://google.com">
+                            <div class="row">
+                                <img src="asserts/img/social/google.svg" alt="Google logo">
+                                <div class="social-media-label">Log in with Google</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://facebook.com">
+                            <div class="row">
+                                <img src="asserts/img/social/facebook.svg" alt="facebook logo">
+                                <div class="social-media-label">Log in with Facebook</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://apple.com">
+                            <div class="row">
+                                <img src="asserts/img/social/apple.svg" alt="apple logo">
+                                <div class="social-media-label">Log in with Apple</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="separator-or-email" class="row">
+            <div class="UIDivider-separator">
+                <hr class="UIDivider-separatorLine">
+            </div>
+            <div class="UIDivider-label">OR EMAIL</div>
+            <div class="UIDivider-separator">
+                <hr class="UIDivider-separatorLine">
+            </div>
+        </div>
+        <form action="#" id="input-personal-data-container">
+            <fieldset>
+                <div id="birthday-wrapper" class="sign-up-is-selected">
+                    <legend class="birthday-legend">BIRTHDAY</legend>
+                    <div class="drop-down-box">
+                        <select aria-label="birth_month" class="UIDropdown-select" name="birth_month">
+                            <option value="-1">Month</option>
+                            <option value="1">January</option>
+                            <option value="2">February</option>
+                            <option value="3">March</option>
+                            <option value="4">April</option>
+                            <option value="5">May</option>
+                            <option value="6">June</option>
+                            <option value="7">July</option>
+                            <option value="8">August</option>
+                            <option value="9">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+                        <a href="#birthday-chevron-down">
+                            <img id="birthday-chevron-down" src="./asserts/img/log-in/chevron-down.svg" alt="Chevron down">
+                        </a>
+                    </div>
+                </div>
+                <div class="input-wrapper">
+                    <div class="input-and-underline-container">
+                        <div class="input-name-wrapper  log-in-is-selected">
+                            <input name="username"
+                                   id="log-in-input"
+                                   placeholder="Type your email address or username" spellcheck="false"
+                                   autocomplete="username" class="input-field" type="text" value="">
+                            <label for="log-in-input"></label>
+                        </div>
+                        <div class="input-name-wrapper sign-up-is-selected">
+                            <input name="username"
+                                   id="sign-up-input"
+                                   placeholder="Type your email address" spellcheck="false"
+                                   autocomplete="username" class="input-field" type="text" value="">
+                            <label for="sign-up-input"></label>
+                        </div>
+                        <span class="UIInput-border"></span>
+                    </div>
+                    <span class="UIInput-label sign-up-is-selected">EMAIL</span>
+                    <span class="UIInput-label log-in-is-selected">EMAIL OR USERNAME</span>
+                </div>
+                <div class="input-wrapper">
+                    <div class="input-and-underline-container">
+                        <input name="password"
+                               id="password-input"
+                               placeholder="Type your password" spellcheck="false"
+                               autocomplete="current-password" class="input-field" type="password" value="">
+                        <label for="password-input"></label>
+                    </div>
+                    <span class="UIInput-border"></span>
+                    <span class="UIInput-label">PASSWORD</span>
+                </div>
+
+            </fieldset>
+
+        </form>
+        <div class="click-area">
+            <div id="accept-wrapper">
+                <div id="check-box-wrapper" class="sign-up-is-selected">
+                    <input type="checkbox" id="accept" name="accept" checked>
+                    <label for="accept">
+                    <span class="UICheckbox-label">I accept  UA Drone Racing’s
+                <a class="UILink" data-testid="UILink-anchor"
+                   href="https://docs.google.com/document/d/1Y_Mxn31nrZ38_PpYmBSYIofS6GhEZiHCo5UGD4ycfNM/edit#heading=h.q4l5me82eern"
+                   rel="noopener" target="_blank"
+                   title="Open the Terms of Service in a new window">
+                Terms of Service and Privacy Policy</a>
+                </span>
+                        <!-- target="_blank"	Opens the linked document in a new window or tab
+                        rel=”noopener” is an HTML attribute that can be added to external links. It prevents the opening page to gain any kind of access to the original page.
+                        -->
+                    </label>
+                </div>
+                <div id="log-in-accept" class="log-in-is-selected">
+                    <div class="UICheckbox-label">By tapping Log in, you accept UA Drone Racing’s
+                        <a class="UILink" data-testid="UILink-anchor"
+                           href="https://docs.google.com/document/d/1Y_Mxn31nrZ38_PpYmBSYIofS6GhEZiHCo5UGD4ycfNM/edit#heading=h.q4l5me82eern"
+                           rel="noopener" target="_blank"
+                           title="Open the Terms of Service in a new window">
+                            Terms of Service and Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+            <div id="buttons-wrapper">
+                <a href="#" class="log-in-is-selected">
+                    <button id="log-in-button" type="button" aria-label="Log in" class="button">
+                        <span>Log in</span>
+                    </button>
+                </a>
+                <a href="#" class="log-in-is-selected">
+                    <button id="sign-up-button" type="button" aria-label="Sign up" class="button">
+                        <span>Sign up</span>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>

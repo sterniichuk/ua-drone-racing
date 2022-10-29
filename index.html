@@ -10,18 +10,18 @@
     <title>Drone Racing</title>
 </head>
 <body>
-<header>
-    <div class="header-left-part">
+<header class="row">
+    <div class="header-left-part row">
         <div class="title-logo">UA Drone Racing</div>
         <nav>
-            <ul class="menu">
-                <li><a href="/#hero-section">Home</a></li>
-                <li><a href="/#tournaments">Tournaments</a></li>
-                <li><a href="/#details">Details</a></li>
+            <ul class="menu row">
+                <li><a href="#hero-section">Home</a></li>
+                <li><a href="#tournaments">Tournaments</a></li>
+                <li><a href="#details">Details</a></li>
             </ul>
         </nav>
     </div>
-    <div class="header-right-part">
+    <div class="header-right-part row">
         <div class="search-wrapper">
             <div class="input-box">
                 <input type="text" placeholder="Race, saver, fight...">
@@ -31,12 +31,16 @@
             </div>
         </div>
         <div class="header-enter-buttons">
-            <button type="button" aria-label="Log in" class="log-in-button">
-                <span>Log in</span>
-            </button>
-            <button type="button" aria-label="Sign in" class="Sign-in-button">
-                <span>Sign in</span>
-            </button>
+            <a href="log-in.html">
+                <button type="button" aria-label="Log in" class="log-in-button">
+                    <span>Log in</span>
+                </button>
+            </a>
+            <a href="log-in.html">
+                <button type="button" aria-label="Sign in" class="Sign-in-button">
+                    <span>Sign in</span>
+                </button>
+            </a>
         </div>
     </div>
 </header>
@@ -183,19 +187,17 @@
             <img src="./asserts/img/tournaments/search.svg" alt="Drone flights over snow">
         </div>
 
-        <div class="horizontal-scroll-list-of-kinds-of-drone-tournaments">
-            <div class="row">
-                <ul>
-                    <li>Fights</li>
-                    <li>Firing</li>
-                    <li>Obstacle</li>
-                    <li>Saver</li>
-                    <li>Race</li>
-                    <li>Delivery</li>
-                    <li>Search</li>
-                </ul>
-            </div>
-
+        <div class="horizontal-scroll-bottom-area">
+            <img src="./asserts/img/up-pointer.svg" alt="Pointer on tournament">
+            <ul class="horizontal-scroll-list-of-tournaments row">
+                <li>Fights</li>
+                <li>Firing</li>
+                <li>Obstacle</li>
+                <li>Saver</li>
+                <li>Race</li>
+                <li>Delivery</li>
+                <li>Search</li>
+            </ul>
         </div>
     </section>
 </main>
@@ -204,31 +206,36 @@
     <div class="row">
         <div class="contacts-info-block">
             <p>Peremogy Avenue, 37, Kyiv, 03056.</p>
-            <p>Racing for everyone: Mon - Fri <time>(10:00 - 17:00)</time>
-                Autumn Tournament: <time>22-25 October (16:00 - 22:00)</time></p>
+            <p>Racing for everyone: Mon - Fri
+                <time>(10:00 - 17:00)</time>
+                Autumn Tournament:
+                <time>22-25 October (16:00 - 22:00)</time>
+            </p>
             <p>
-                <address>
-                    <ul>
-                        <li>3803565420</li>
-                        <li>3805568421</li>
-                        <li>3809565422</li>
-                        <li>uadroneracing@lll.kpi.ua</li>
-                    </ul>
-                </address>
+            <address>
+                <ul>
+                    <li>3803565420</li>
+                    <li>3805568421</li>
+                    <li>3809565422</li>
+                    <li>uadroneracing@lll.kpi.ua</li>
+                </ul>
+            </address>
             </p>
             <div class="row">
                 <ul>
                     <li>
-                        <a href="#" class="call-button">Call</a>
+                        <button type="button" aria-label="Call" class="call-button">
+                            <span>Call</span>
+                        </button>
                     </li>
                     <li>
-                        <a href="https://www.facebook.com/" class="social">
-                            <img src="asserts/img/social/facebook.svg" alt="facebook icon" width="16">
+                        <a href="https://www.facebook.com/" class="social contacts">
+                            <img src="asserts/img/social/facebook.svg" alt="facebook icon" width="64">
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.instagram.com/" class="social">
-                            <img src="asserts/img/social/instagram.svg" alt="facebook icon" width="16">
+                        <a href="https://www.instagram.com/" class="social contacts">
+                            <img src="asserts/img/social/instagram.svg" alt="facebook icon" width="64">
                         </a>
                     </li>
                 </ul>

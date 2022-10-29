@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+.row {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+.UIInput-border {
+    align-self: flex-end;
+    box-shadow: 0 0.125rem 0 0 black;
+    display: block;
+    height: 0.25rem;
+    width: 100%;
+}
+
+.desktop {
+    /*display: none;*/
+}
+
+.log-in-is-selected {
+    /*display: none;*/
+}
+
+.sign-up-is-selected {
+    /*display: none;*/
+}
+
+.UIDivider-separator {
+    flex-basis: 2px;
+    flex-grow: 1;
+}
+
+fieldset {
+    border: none;
+}
+
+.UIDivider-separatorLine {
+    border: none;
+    border-bottom: 0.125rem solid #DADDE7;
+    height: 5px;
+    margin-bottom: 0;
+    overflow: visible;
+}
+
+.UIDivider-label {
+    color: #DADDE7;
+    flex-grow: 0;
+    font-size: .75rem;
+    font-weight: 600;
+    letter-spacing: .0625rem;
+    line-height: 1.333333333333333;
+    padding: 0 1.25rem;
+    text-align: center;
+    text-transform: uppercase;
+}

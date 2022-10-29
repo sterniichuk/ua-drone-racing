@@ -6,28 +6,29 @@
     text-decoration: none;
 }
 
-.input-box{
+.input-box {
     box-sizing: border-box;
 }
 
-.input-box img{
+.input-box img {
     height: 20px;
 }
-.input-box input{
+
+.input-box input {
     height: 32px;
 }
-body{
 
-}
-.hero-section-background{
+
+.hero-section-background {
     background-image: url(/asserts/img/hero-image.png);
     background-size: cover;
-    height:720px;
+    height: 720px;
 }
 
-.row{
+.row {
     display: flex;
 }
+
 /*.title-logo {*/
 /*    color: #5562F7;*/
 /*    font-size: 24px;*/
@@ -36,6 +37,16 @@ body{
 
 a {
     text-decoration: none;
+}
+
+address {
+    text-decoration: none;
+}
+
+.call-button {
+    width: 200px;
+    height: 85px;
+    font-size: 32px;
 }
 
 /*body{*/
