@@ -1,0 +1,9 @@
+.hero-section-background {
+    background-image: url(/asserts/img/hero-image.png);
+    background-size: cover;
+    height: 720px;
+}
+
+address {
+    text-decoration: none;
+}

@@ -1,0 +1,47 @@
+#menu-button{
+    height: 100%;
+    width: 50px;
+}
+#menu-button img{
+    max-width: 50%;
+}
+
+.hero-background{
+    box-sizing: border-box;
+
+    width: 375px;
+    height: 537px;
+    left: 0;
+    top: 96px;
+
+    background: conic-gradient(from 180.15deg at 50.13% 49.91%, rgba(237, 207, 95, 0.96) -42.5deg, rgba(133, 5, 165, 0.88) 132.92deg, rgba(237, 207, 95, 0.96) 317.5deg, rgba(133, 5, 165, 0.88) 492.92deg);
+    /* Light gray corner color */
+
+    border: 3px solid #DADDE7;
+}
+
+#menu-header{
+    height: 50px;
+}
+.circle-close-button img{
+    height: 100%;
+}
+
+.background-wrapper{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.background-wrapper .first-background{
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+}
+.background-wrapper .image-background{
+    z-index: 10;
+}
+

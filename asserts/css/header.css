@@ -1,0 +1,15 @@
+.search-input-box {
+    box-sizing: border-box;
+}
+
+.search-input-box img {
+    height: 20px;
+}
+
+.search-input-box input {
+    height: 32px;
+}
+
+.social-contacts img{
+    width: 50px;
+}
