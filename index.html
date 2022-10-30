@@ -2,10 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no,
-          initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./asserts/css/style.css">
     <title>Drone Racing</title>
 </head>
@@ -28,16 +25,16 @@
             <label for="search-input"></label>
         </div>
         <div class="header-enter-buttons">
-            <a href="log-in.html">
-                <button type="button" aria-label="Log in" class="log-in-button">
-                    <span>Log in</span>
-                </button>
-            </a>
-            <a href="log-in.html">
-                <button type="button" aria-label="Sign in" class="Sign-in-button">
-                    <span>Sign in</span>
-                </button>
-            </a>
+            <button type="button" aria-label="Log in"
+                    onclick="location.href='log-in.html'"
+                    class="log-in-button">
+                <span>Log in</span>
+            </button>
+            <button type="button" aria-label="Sign in"
+                    onclick="location.href='log-in.html'"
+                    class="Sign-in-button">
+                <span>Sign in</span>
+            </button>
         </div>
     </div>
 </header>
@@ -265,14 +262,15 @@
     </section>
 </main>
 <footer id="details">
-    <h1>Who? Where? When?</h1>
+    <h2>Who? Where? When?</h2>
     <div class="row">
         <div class="contacts-info-block">
             <p>Peremogy Avenue, 37, Kyiv, 03056.</p>
             <p>Racing for everyone: Mon - Fri
-                <time>(10:00 - 17:00)</time>
+                (<time>10:00</time> - <time>17:00</time>)<br>
                 Autumn Tournament:
-                <time>22-25 October (16:00 - 22:00)</time>
+                <time datetime="10-22" >22</time>-<time datetime="10-25" >25</time> October
+                (<time>16:00</time> - <time>22:00</time>)
             </p>
             <address>
                 <ul>

@@ -2,10 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no,
-          initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./asserts/css/log-in.css">
     <title>Start session</title>
 </head>
@@ -32,21 +29,21 @@
     </div>
     <a href="index.html">
         <img alt="Back to Home button" src="./asserts/img/log-in/close-button.svg"
-             width=14" height="14">
+             width="14" height="14">
     </a>
 
 </header>
 
 <main class="row">
-    <section id="hero-image-wrapper" class="desktop">
+    <div id="hero-image-wrapper" class="desktop">
         <div class="sign-up-is-selected">
             <img src="./asserts/img/log-in/sign-up.svg" class="hero-image" alt="laptop">
         </div>
         <div class="log-in-is-selected">
             <img src="asserts/img/log-in/log-in.svg" class="hero-image" alt="laptop">
         </div>
-    </section>
-    <section id="content">
+    </div>
+    <div id="content">
         <div id="select-social-media">
             <ul id="social-media-list-sign-up" class="sign-up-is-selected">
                 <li>
@@ -74,7 +71,7 @@
                     </a>
                 </li>
             </ul>
-            <ul id="social-media-list-log-in " class="log-in-is-selected">
+            <ul id="social-media-list-log-in" class="log-in-is-selected">
                 <li>
                     <a href="https://google.com">
                         <div class="row">
@@ -370,21 +367,21 @@
                 <div class="click-area">
 
                     <div id="buttons-wrapper">
-                        <a href="#" class="log-in-is-selected">
-                            <button id="log-in-button" type="button" aria-label="Log in" class="button">
-                                <span>Log in</span>
-                            </button>
-                        </a>
-                        <a href="#" class="sign-up-is-selected">
-                            <button id="sign-up-button" type="button" aria-label="Sign up" class="button">
-                                <span>Sign up</span>
-                            </button>
-                        </a>
+                        <button id="log-in-button" type="button" aria-label="Log in"
+                                onclick="location.href='#'"
+                                class="button">
+                            <span>Log in</span>
+                        </button>
+                        <button id="sign-up-button" type="button" aria-label="Sign up"
+                                onclick="location.href='#'"
+                                class="button">
+                            <span>Sign up</span>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 </main>
 </body>
 </html>
