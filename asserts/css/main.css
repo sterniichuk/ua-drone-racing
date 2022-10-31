@@ -1,5 +1,5 @@
 .hero-section-background {
-    background-image: url(/asserts/img/hero-image.png);
+    background-image: url(/asserts/img/hero-image.webp);
     background-size: cover;
     height: 720px;
 }
@@ -7,3 +7,18 @@
 address {
     text-decoration: none;
 }
+
+@media (max-width: 767px) {
+    .node img{
+        width: 50vh;
+        height: 100vh;
+    }
+}
+
+@media (min-width: 768px) {
+    .node img{
+        width: 50vh;
+        height: 50vh;
+    }
+}
+
