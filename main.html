@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./asserts/css/mobile.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
         @media (max-width: 767px) {
             .desktop {
                 display: none;
@@ -79,7 +80,6 @@
             </div>
         </div>
     </div>
-
 </header>
 <main>
     <section id="hero-section">
@@ -112,166 +112,188 @@
             <div class="hero-background first-background" style="opacity: 50%"></div>
             <img class="image-background" src="./asserts/img/mobile/benefits-image.webp" alt="Track for drone racing">
         </div>
-        <div class="text-info">
-            <h2>Generally every track is bigger in 2 times than another in Ukraine!</h2>
-            <div id="benefits-content" class="row">
-                <div class="info-block">
-                    <h3>We have 7 kinds of drone <br>racing tournaments</h3>
-                    <p class="desktop">Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit. Integer non lorem ipsum.
-                        commodo ipsum </p>
-                    <button type="button" aria-label="Start" class="start-button desktop"
-                            onclick="location.href='log-in.html'">
-                        <span>Start</span>
-                    </button>
-                </div>
-                <img class="desktop" src="./asserts/img/benefits.webp" alt="Neon Drone Racing" width="700">
+        <h2>We have 7 kinds of drone racing tournaments</h2>
+        <div class="row">
+            <div class="info-block">
+                <h3>Generally every track is bigger in 2 times than another in Ukraine!</h3>
+                <p class="desktop">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Integer non lorem ipsum.
+                    commodo ipsum </p>
+                <button type="button" aria-label="Start" class="start-button desktop"
+                        onclick="location.href='log-in.html'">
+                    <span>Start</span>
+                </button>
             </div>
+            <img class="desktop" src="./asserts/img/benefits.webp" alt="Neon Drone Racing" width="700">
         </div>
     </section>
     <section id="tournaments">
         <h2>Tournaments</h2>
-
-        <div id="fights" class="node row">
-            <div class="info-block">
-                <h3>Fights</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit. Integer non lorem ipsum.
-                    commodo ipsum </p>
-
-                <div class="row more-join-block">
-                    <button type="button" aria-label="More" class="more-button"
-                            onclick="location.href='#tournaments'">
-                        <span>More</span>
-                    </button>
-                    <button type="button" aria-label="Join" class="join-button"
-                            onclick="location.href='log-in.html'">
-                        <span>Join</span>
-                    </button>
+        <ul id="scroll-list">
+            <li>
+                <div id="fights" class="node row">
+                    <div class="info-block">
+                        <div class="text-info-of-node">
+                            <h3>Fights</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Integer non lorem ipsum.
+                                commodo ipsum </p>
+                        </div>
+                        <div class="row more-join-block">
+                            <button type="button" aria-label="More" class="more-button"
+                                    onclick="location.href='#tournaments'">
+                                <span>More</span>
+                            </button>
+                            <button type="button" aria-label="Join" class="join-button"
+                                    onclick="location.href='log-in.html'">
+                                <span>Join</span>
+                            </button>
+                        </div>
+                    </div>
+                    <img src="./asserts/img/tournaments/fights.webp" alt="Drone fights with another drone">
                 </div>
-            </div>
-            <img src="./asserts/img/tournaments/fights.webp" alt="Drone fights with another drone">
-        </div>
-        <div id="firing" class="node row">
-            <div class="info-block">
-                <h3>Firing</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit. Integer non lorem ipsum.
-                    commodo ipsum </p>
-
-                <div class="row more-join-block">
-                    <button type="button" aria-label="More" class="more-button"
-                            onclick="location.href='#tournaments'">
-                        <span>More</span>
-                    </button>
-                    <button type="button" aria-label="Join" class="join-button"
-                            onclick="location.href='log-in.html'">
-                        <span>Join</span>
-                    </button>
+            </li>
+            <li>
+                <div id="firing" class="node row">
+                    <div class="info-block">
+                        <div class="text-info-of-node">
+                            <h3>Firing</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Integer non lorem ipsum.
+                                commodo ipsum </p>
+                        </div>
+                        <div class="row more-join-block">
+                            <button type="button" aria-label="More" class="more-button"
+                                    onclick="location.href='#tournaments'">
+                                <span>More</span>
+                            </button>
+                            <button type="button" aria-label="Join" class="join-button"
+                                    onclick="location.href='log-in.html'">
+                                <span>Join</span>
+                            </button>
+                        </div>
+                    </div>
+                    <img src="./asserts/img/tournaments/firing.webp" alt="Military drone">
                 </div>
-            </div>
-            <img src="./asserts/img/tournaments/firing.webp" alt="Military drone">
-        </div>
-        <div id="obstacle" class="node row">
-            <div class="info-block">
-                <h3>Obstacle</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit. Integer non lorem ipsum.
-                    commodo ipsum </p>
-
-                <div class="row more-join-block">
-                    <button type="button" aria-label="More" class="more-button"
-                            onclick="location.href='#tournaments'">
-                        <span>More</span>
-                    </button>
-                    <button type="button" aria-label="Join" class="join-button"
-                            onclick="location.href='log-in.html'">
-                        <span>Join</span>
-                    </button>
+            </li>
+            <li>
+                <div id="obstacle" class="node row">
+                    <div class="info-block">
+                        <div class="text-info-of-node">
+                            <h3>Obstacle</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Integer non lorem ipsum.
+                                commodo ipsum </p>
+                        </div>
+                        <div class="row more-join-block">
+                            <button type="button" aria-label="More" class="more-button"
+                                    onclick="location.href='#tournaments'">
+                                <span>More</span>
+                            </button>
+                            <button type="button" aria-label="Join" class="join-button"
+                                    onclick="location.href='log-in.html'">
+                                <span>Join</span>
+                            </button>
+                        </div>
+                    </div>
+                    <img src="./asserts/img/tournaments/obstacle.webp" alt="Drone flights through obstacle">
                 </div>
-            </div>
-            <img src="./asserts/img/tournaments/obstacle.webp" alt="Drone flights through obstacle">
-        </div>
-        <div id="saver" class="node row">
-            <div class="info-block">
-                <h3>Saver</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit. Integer non lorem ipsum.
-                    commodo ipsum </p>
-
-                <div class="row more-join-block">
-                    <button type="button" aria-label="More" class="more-button"
-                            onclick="location.href='#tournaments'">
-                        <span>More</span>
-                    </button>
-                    <button type="button" aria-label="Join" class="join-button"
-                            onclick="location.href='log-in.html'">
-                        <span>Join</span>
-                    </button>
+            </li>
+            <li>
+                <div id="saver" class="node row">
+                    <div class="info-block">
+                        <div class="text-info-of-node">
+                            <h3>Saver</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Integer non lorem ipsum.
+                                commodo ipsum </p>
+                        </div>
+                        <div class="row more-join-block">
+                            <button type="button" aria-label="More" class="more-button"
+                                    onclick="location.href='#tournaments'">
+                                <span>More</span>
+                            </button>
+                            <button type="button" aria-label="Join" class="join-button"
+                                    onclick="location.href='log-in.html'">
+                                <span>Join</span>
+                            </button>
+                        </div>
+                    </div>
+                    <img src="./asserts/img/tournaments/saver.webp" alt="Drone with medic box">
                 </div>
-            </div>
-            <img src="./asserts/img/tournaments/saver.webp" alt="Drone with medic box">
-        </div>
-        <div id="race" class="node row">
-            <div class="info-block">
-                <h3>Race</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit. Integer non lorem ipsum.
-                    commodo ipsum </p>
+            </li>
+            <li>
+                <div id="race" class="node row">
+                    <div class="info-block">
+                        <div class="text-info-of-node">
+                            <h3>Race</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Integer non lorem ipsum.
+                                commodo ipsum </p>
+                        </div>
 
-                <div class="row more-join-block">
-                    <button type="button" aria-label="More" class="more-button"
-                            onclick="location.href='#tournaments'">
-                        <span>More</span>
-                    </button>
-                    <button type="button" aria-label="Join" class="join-button"
-                            onclick="location.href='log-in.html'">
-                        <span>Join</span>
-                    </button>
-                </div>
-            </div>
-            <img src="./asserts/img/tournaments/race.webp" alt="Man holds drone">
-        </div>
-        <div id="delivery" class="node row">
-            <div class="info-block">
-                <h3>Delivery</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit. Integer non lorem ipsum.
-                    commodo ipsum </p>
 
-                <div class="row more-join-block">
-                    <button type="button" aria-label="More" class="more-button"
-                            onclick="location.href='#tournaments'">
-                        <span>More</span>
-                    </button>
-                    <button type="button" aria-label="Join" class="join-button"
-                            onclick="location.href='log-in.html'">
-                        <span>Join</span>
-                    </button>
+                        <div class="row more-join-block">
+                            <button type="button" aria-label="More" class="more-button"
+                                    onclick="location.href='#tournaments'">
+                                <span>More</span>
+                            </button>
+                            <button type="button" aria-label="Join" class="join-button"
+                                    onclick="location.href='log-in.html'">
+                                <span>Join</span>
+                            </button>
+                        </div>
+                    </div>
+                    <img src="./asserts/img/tournaments/race.webp" alt="Man holds drone">
                 </div>
-            </div>
-            <img src="./asserts/img/tournaments/delivery.webp" alt="Drone transfers three pizza">
-        </div>
-        <div id="search" class="node row">
-            <div class="info-block">
-                <h3>Search</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit. Integer non lorem ipsum.
-                    commodo ipsum </p>
-
-                <div class="row more-join-block">
-                    <button type="button" aria-label="More" class="more-button"
-                            onclick="location.href='#tournaments'">
-                        <span>More</span>
-                    </button>
-                    <button type="button" aria-label="Join" class="join-button"
-                            onclick="location.href='log-in.html'">
-                        <span>Join</span>
-                    </button>
+            </li>
+            <li>
+                <div id="delivery" class="node row">
+                    <div class="info-block">
+                        <div class="text-info-of-node">
+                            <h3>Delivery</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Integer non lorem ipsum.
+                                commodo ipsum </p>
+                        </div>
+                        <div class="row more-join-block">
+                            <button type="button" aria-label="More" class="more-button"
+                                    onclick="location.href='#tournaments'">
+                                <span>More</span>
+                            </button>
+                            <button type="button" aria-label="Join" class="join-button"
+                                    onclick="location.href='log-in.html'">
+                                <span>Join</span>
+                            </button>
+                        </div>
+                    </div>
+                    <img src="./asserts/img/tournaments/delivery.webp" alt="Drone transfers three pizza">
                 </div>
-            </div>
-            <img src="./asserts/img/tournaments/search.webp" alt="Drone flights over snow">
-        </div>
+            </li>
+            <li>
+                <div id="search" class="node row">
+                    <div class="info-block">
+                        <div class="text-info-of-node">
+                            <h3>Search</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Integer non lorem ipsum.
+                                commodo ipsum </p>
+                        </div>
+                        <div class="row more-join-block">
+                            <button type="button" aria-label="More" class="more-button"
+                                    onclick="location.href='#tournaments'">
+                                <span>More</span>
+                            </button>
+                            <button type="button" aria-label="Join" class="join-button"
+                                    onclick="location.href='log-in.html'">
+                                <span>Join</span>
+                            </button>
+                        </div>
+                    </div>
+                    <img src="./asserts/img/tournaments/search.webp" alt="Drone flights over snow">
+                </div>
+            </li>
+        </ul>
 
         <div class="horizontal-scroll-bottom-area">
             <img src="./asserts/img/up-pointer.svg" alt="Pointer on tournament">
@@ -340,40 +362,55 @@
         <div class="text-info">
             <h2>WHEN</h2>
             <p>Racing for everyone: <br> Mon - Fri
-                (<time>10:00</time> - <time>17:00</time>)<br>
+                (
+                <time>10:00</time>
+                -
+                <time>17:00</time>
+                )<br>
                 Autumn Tournament:<br>
-                <time datetime="10-22" >22</time>-<time datetime="10-25" >25</time> October
-                (<time>16:00</time> - <time>22:00</time>)
+                <time datetime="10-22">22</time>
+                -
+                <time datetime="10-25">25</time>
+                October
+                (
+                <time>16:00</time>
+                -
+                <time>22:00</time>
+                )
             </p>
         </div>
     </section>
-    <section id="contacts"  class="mobile">
+    <section id="contacts" class="mobile">
         <div class="background-wrapper">
             <div class="hero-background first-background" style="opacity: 7%"></div>
             <img class="image-background" src="./asserts/img/mobile/contacts.webp" alt="Drone racing">
         </div>
-        <h2>Contacts</h2>
-        <address>
-            <ul>
-                <li>+3803565420</li>
-                <li>+3805568421</li>
-                <li>+3809565422</li>
-                <li>uadroneracing@lll.kpi.ua</li>
-            </ul>
-        </address>
-        <div class="row">
-            <a href="https://www.facebook.com/" class="social-contacts">
-                <img src="./asserts/img/social/facebook.svg" alt="facebook icon">
-            </a>
-            <a href="https://www.instagram.com/" class="social-contacts">
-                <img src="./asserts/img/social/instagram.svg" alt="Instagram icon" >
-            </a>
+        <div class="info-block">
+            <div class="text-info">
+                <h2>Contacts</h2>
+                <address>
+                    <ul>
+                        <li><a href="tel:+3803565420">+3803565420</a></li>
+                        <li><a href="tel:+3803565421">+3803565421</a></li>
+                        <li><a href="tel:+3803565422">+3803565422</a></li>
+                        <li><a href="mailto:uadroneracing@lll.kpi.ua">uadroneracing@lll.kpi.ua</a></li>
+                    </ul>
+                </address>
+            </div>
+            <div class="row">
+                <a href="https://www.facebook.com/" class="social-contacts">
+                    <img src="./asserts/img/social/facebook.svg" alt="facebook icon">
+                </a>
+                <a href="https://www.instagram.com/" class="social-contacts">
+                    <img src="./asserts/img/social/instagram.svg" alt="Instagram icon">
+                </a>
+            </div>
         </div>
     </section>
     <section id="details" class="desktop">
         <h2>Who? Where? When?</h2>
         <div class="row">
-            <div class="contacts-info-block">
+            <div class="info-block">
                 <p>Peremogy Avenue, 37, Kyiv, 03056.</p>
                 <p>Racing for everyone: Mon - Fri
                     (
@@ -394,10 +431,10 @@
                 </p>
                 <address>
                     <ul>
-                        <li>+3803565420</li>
-                        <li>+3805568421</li>
-                        <li>+3809565422</li>
-                        <li>uadroneracing@lll.kpi.ua</li>
+                        <li><a href="tel:+3803565420">+3803565420</a></li>
+                        <li><a href="tel:+3803565421">+3803565421</a></li>
+                        <li><a href="tel:+3803565422">+3803565422</a></li>
+                        <li><a href="mailto:uadroneracing@lll.kpi.ua">uadroneracing@lll.kpi.ua</a></li>
                     </ul>
                 </address>
                 <div class="row">
