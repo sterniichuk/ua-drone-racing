@@ -1,6 +1,12 @@
-#select-social-media img{
-    width: 30px;
+/*hero img*/
+#hero-image-wrapper{
+    width: fit-content;
 }
+#hero-image-wrapper > div > img{
+    width: 50vw;
+}
+/*second part of page*/
+
 
 .UIInput-border {
     align-self: flex-end;
@@ -10,22 +16,10 @@
     width: 100%;
 }
 
-.desktop {
-    /*display: none;*/
-}
-
-.log-in-is-selected {
-    /*display: none;*/
-}
-
 #question-button{
     min-width: 25px;
     background: none;
     border: none;
-}
-
-.sign-up-is-selected {
-    /*display: none;*/
 }
 
 .UIDivider-separator {
@@ -60,3 +54,102 @@ fieldset {
     text-align: center;
     text-transform: uppercase;
 }
+/*close*/
+#close-log-sign-pop-up{
+    cursor: pointer;
+    border-radius: 2rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    z-index: 101;
+}
+#close-log-sign-pop-up > img{
+    width: 1.5rem;
+}
+
+/*switch*/
+.switch{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    column-gap: 2rem;
+    justify-content: space-between;
+}
+
+.switch-img{
+    width: 75%;
+}
+
+.switch-item{
+    cursor: pointer;
+}
+.switch-item h4{
+    font-size: 1.5rem;
+    overflow: hidden;
+}
+
+/*social-media*/
+.social-media-label{
+    letter-spacing: .0625rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.social-media-list > li > a > div{
+    font-size: 1.125rem;
+    font-weight: 700;
+    letter-spacing: .0625rem;
+    line-height: 1.222222222222222;
+    padding: 3%;
+    border: 2px solid #DADDE7;
+    border-radius: 4px;
+    padding-left: 0.5rem;
+}
+.social-media-list{
+}
+
+
+.social-media-list > li > a > div > img{
+    width: 1.875rem;
+    margin-left: 5%;
+}
+.social-media-list{
+    width: 100%;
+}
+.social-media-list > li{
+    margin-bottom: 3.5%;
+}
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
+}
+
+.input-personal-data-container{
+    display: none;
+}
+#separator-or-email{
+    display: none;
+}
+
+#log-sign-content-wrapper{
+    width: 50vw;
+    margin: 1rem;
+}
+
+#content{
+    justify-content: center;
+    align-items: center;
+}
+#log-sign-body {
+}
+#log-in-header{
+    width: 100%;
+    position: relative;
+}
+
+*{
+    border: dashed 1px red;
+}
+
+
