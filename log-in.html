@@ -14,12 +14,30 @@
             #log-sign-content-wrapper {
                 min-width: 93%;
             }
-            .UIDropdown-icon{
+
+            .UIDropdown-icon {
                 padding: 0 0.4rem;
                 width: 0.9rem;
             }
+
             .UIDropdown-select {
                 padding-left: 0.5rem;
+            }
+
+            .UIInput {
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1.1875;
+            }
+            .UIInput-input {
+                padding-bottom: 0;
+            }
+            .UIInput-label {
+                font-size: .625rem;
+                font-weight: 600;
+                letter-spacing: .0625rem;
+                line-height: 1.3;
+                text-transform: uppercase;
             }
         }
     </style>
@@ -95,7 +113,7 @@
                 </div>
                 <form class="input-personal-data-container">
                     <div class="birthday-form-wrapper">
-                        <div id="birthday-form" class="input-wrapper">
+                        <div id="birthday-form">
                             <div class="birthday-legend">BIRTHDAY</div>
                             <div class="row">
                                 <div class="UIDropdown UIDropdown-first">
@@ -121,7 +139,7 @@
                                          alt="chevron of selection"
                                          src="/asserts/img/log-in/chevron-down.svg"
                                          role="img" aria-label="chevron down"
-                                         >
+                                    >
                                 </div>
                                 <div class="UIDropdown">
                                     <select id="birth-day-select" aria-label="birth_day" class="UIDropdown-select"
@@ -164,7 +182,7 @@
                                          alt="chevron of selection"
                                          src="/asserts/img/log-in/chevron-down.svg"
                                          role="img" aria-label="chevron down"
-                                         >
+                                    >
                                 </div>
                                 <div class="UIDropdown">
                                     <select id="birth-year-select" aria-label="birth_year" class="UIDropdown-select"
@@ -307,7 +325,7 @@
                                          alt="chevron of selection"
                                          src="/asserts/img/log-in/chevron-down.svg"
                                          role="img" aria-label="chevron down"
-                                         >
+                                    >
                                 </div>
                                 <button type="button" aria-label="Question"
                                         id="question-button"
@@ -318,28 +336,26 @@
                         </div>
                     </div>
                     <div class="down-part">
-                        <div class="input-wrapper">
-                            <div class="input-email-or-username">
-                                <div class="input-name-wrapper">
-                                    <input name="email"
-                                           id="sign-up-input"
-                                           placeholder="Type your email address" spellcheck="false"
-                                           autocomplete="email" class="input-field" type="text" value="">
-                                    <label for="sign-up-input"></label>
-                                </div>
+                        <label class="UIInput" for="sign-up-input">
+                            <div class="UIInput-content">
+                                <input name="email"
+                                       id="sign-up-input"
+                                       placeholder="Type your email address" spellcheck="false"
+                                       autocomplete="email" class="UIInput-input" type="text" value="">
                                 <span class="UIInput-border"></span>
                             </div>
                             <span class="UIInput-label">EMAIL</span>
-                        </div>
-                        <div class="input-wrapper">
-                            <input name="password-sign-up"
-                                   id="password-input-sign-up"
-                                   placeholder="Type your password" spellcheck="false"
-                                   autocomplete="current-password" class="input-field" type="password" value="">
-                            <label for="password-input-sign-up"></label>
-                            <span class="UIInput-border"></span>
+                        </label>
+                        <label class="UIInput" for="password-input-sign-up">
+                            <div class="UIInput-content">
+                                <input name="password-sign-up"
+                                       id="password-input-sign-up"
+                                       placeholder="Type your password" spellcheck="false"
+                                       autocomplete="current-password" class="UIInput-input" type="password" value="">
+                                <span class="UIInput-border"></span>
+                            </div>
                             <span class="UIInput-label">PASSWORD</span>
-                        </div>
+                        </label>
                         <div id="accept-wrapper">
                             <div id="check-box-wrapper">
                                 <input type="checkbox" id="accept" name="accept" checked>
@@ -396,28 +412,26 @@
                 </ul>
                 <div class="input-personal-data-container">
                     <div class="down-part">
-                        <div class="input-wrapper">
-                            <div class="input-email-or-username">
-                                <div class="input-name-wrapper">
-                                    <input name="username"
-                                           id="log-in-input"
-                                           placeholder="Type your email address or username" spellcheck="false"
-                                           autocomplete="username" class="input-field" type="text" value="">
-                                    <label for="log-in-input"></label>
-                                </div>
+                        <label class="UIInput" for="log-in-input">
+                            <div class="UIInput-content">
+                                <input name="username"
+                                       id="log-in-input"
+                                       placeholder="Type your email address or username" spellcheck="false"
+                                       autocomplete="username" class="UIInput-input" type="text" value="">
                                 <span class="UIInput-border"></span>
                             </div>
                             <span class="UIInput-label">EMAIL OR USERNAME</span>
-                        </div>
-                        <div class="input-wrapper">
-                            <input name="password"
-                                   id="password-input-log-in"
-                                   placeholder="Type your password" spellcheck="false"
-                                   autocomplete="current-password" class="input-field" type="password" value="">
-                            <label for="password-input-log-in"></label>
-                            <span class="UIInput-border"></span>
+                        </label>
+                        <label class="UIInput" for="password-input-log-in">
+                            <div class="UIInput-content">
+                                <input name="password"
+                                       id="password-input-log-in"
+                                       placeholder="Type your password" spellcheck="false"
+                                       autocomplete="current-password" class="UIInput-input" type="password" value="">
+                                <span class="UIInput-border"></span>
+                            </div>
                             <span class="UIInput-label">PASSWORD</span>
-                        </div>
+                        </label>
                         <div id="log-in-accept" class="log-in-is-selected">
                             <div class="UICheckbox-label">By tapping Log in, you accept UA Drone Racing’s
                                 <a class="UILink" data-testid="UILink-anchor"

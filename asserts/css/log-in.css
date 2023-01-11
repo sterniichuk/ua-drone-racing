@@ -7,47 +7,6 @@
 }
 /*second part of page*/
 
-
-.UIInput-border {
-    align-self: flex-end;
-    box-shadow: 0 0.125rem 0 0 black;
-    display: block;
-    height: 0.25rem;
-    width: 100%;
-}
-
-.UIDivider-separator {
-    flex-basis: 2px;
-    flex-grow: 1;
-}
-
-.birthday-form > div {
-    border: none;
-}
-
-.chevron-down-chevron{
-    width: 10px;
-}
-
-.UIDivider-separatorLine {
-    border: none;
-    border-bottom: 0.125rem solid #DADDE7;
-    height: 5px;
-    margin-bottom: 0;
-    overflow: visible;
-}
-
-.UIDivider-label {
-    color: #DADDE7;
-    flex-grow: 0;
-    font-size: .75rem;
-    font-weight: 600;
-    letter-spacing: .0625rem;
-    line-height: 1.333333333333333;
-    padding: 0 1.25rem;
-    text-align: center;
-    text-transform: uppercase;
-}
 /*close*/
 #close-log-sign-pop-up{
     cursor: pointer;
@@ -81,6 +40,7 @@
     font-size: 1.5rem;
     overflow: hidden;
 }
+/*switch end*/
 
 /*social-media*/
 .social-media-label{
@@ -95,14 +55,10 @@
     font-weight: 700;
     letter-spacing: .0625rem;
     line-height: 1.222222222222222;
-    padding: 3%;
     border: 2px solid #DADDE7;
     border-radius: 4px;
-    padding-left: 0.5rem;
+    padding: 3% 3% 3% 0.5rem;
 }
-.social-media-list{
-}
-
 
 .social-media-list > li > a > div > img{
     width: 1.875rem;
@@ -114,6 +70,7 @@
 .social-media-list > li{
     margin-bottom: 3.5%;
 }
+/*social-media end*/
 
 a, a:visited, a:hover, a:active {
     color: inherit;
@@ -143,7 +100,8 @@ a, a:visited, a:hover, a:active {
 *{
     /*border: dashed 1px red;*/
 }
-/*select birdthday*/
+
+/*select birthday*/
 .birthday-legend{
     color: #949AB2;
     font-size: .75rem;
@@ -217,7 +175,12 @@ a, a:visited, a:hover, a:active {
     background: none;
     border: none;
     margin-left: 3%;
+    cursor: pointer;
 }
+.birthday-form > div {
+    border: none;
+}
+/*select birthday end*/
 
 .input-personal-data-container{
     margin-top: 1rem;
@@ -230,3 +193,94 @@ a, a:visited, a:hover, a:active {
 .UICheckbox-label{
     cursor: pointer;
 }
+
+
+.UIInput-border {
+    align-self: flex-end;
+    box-shadow: 0 0.125rem 0 0 black;
+    display: block;
+    height: 0.25rem;
+    width: 100%;
+}
+
+.UIDivider-separator {
+    flex-basis: 2px;
+    flex-grow: 1;
+}
+
+
+.chevron-down-chevron{
+    width: 10px;
+}
+
+.UIDivider-separatorLine {
+    border: none;
+    border-bottom: 0.125rem solid #DADDE7;
+    height: 5px;
+    margin-bottom: 0;
+    overflow: visible;
+}
+
+.UIDivider-label {
+    color: #DADDE7;
+    flex-grow: 0;
+    font-size: .75rem;
+    font-weight: 600;
+    letter-spacing: .0625rem;
+    line-height: 1.333333333333333;
+    padding: 0 1.25rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*input text*/
+.UIInput {
+    cursor: pointer;
+    display: block;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.444444444444444;
+    margin-bottom: 1.1rem;
+}
+.UIInput-content {
+    align-items: flex-start;
+    border-radius: 0.25rem;
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    width: 100%;
+}
+
+.UIInput-input {
+    appearance: none;
+    background-color: initial;
+    border: none;
+    border-radius: 0.25rem;
+    box-shadow: none;
+    color: #000000;
+    cursor: text;
+    filter: none;
+    flex: 1 1 auto;
+    font: inherit;
+    letter-spacing: inherit;
+    line-height: inherit;
+    outline: none;
+    padding-bottom: 0.375rem;
+    text-align: inherit;
+    white-space: pre-wrap;
+    width: 100%;
+    word-break: break-word;
+}
+.UIInput-label{
+    color: #949AB2;
+    display: block;
+    font-size: .75rem;
+    font-weight: 600;
+    letter-spacing: .0625rem;
+    line-height: 1.333333333333333;
+    margin-top: 0.45rem;
+    text-align: inherit;
+    text-transform: uppercase;
+}
+
+/*input text end*/
