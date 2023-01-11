@@ -29,9 +29,11 @@
                 font-weight: 400;
                 line-height: 1.1875;
             }
+
             .UIInput-input {
                 padding-bottom: 0;
             }
+
             .UIInput-label {
                 font-size: .625rem;
                 font-weight: 600;
@@ -356,28 +358,25 @@
                             </div>
                             <span class="UIInput-label">PASSWORD</span>
                         </label>
-                        <div id="accept-wrapper">
-                            <div id="check-box-wrapper">
-                                <input type="checkbox" id="accept" name="accept" checked>
-                                <label for="accept">
-                    <span class="UICheckbox-label">I accept  UA Drone Racing’s
-                <a class="UILink" data-testid="UILink-anchor"
-                   href="https://docs.google.com/document/d/1Y_Mxn31nrZ38_PpYmBSYIofS6GhEZiHCo5UGD4ycfNM/edit#heading=h.q4l5me82eern"
-                   rel="noopener" target="_blank"
-                   title="Open the Terms of Service in a new window">
-                Terms of Service and Privacy Policy</a>
-                </span>
-                                    <!-- target="_blank"	Opens the linked document in a new window or tab
-                                    rel=”noopener” is an HTML attribute that can be added to external links. It prevents the opening page to gain any kind of access to the original page.
-                                    -->
-                                </label>
-                            </div>
+                        <div class="UICheckbox">
+                            <input type="checkbox" class="UICheckbox-input" id="accept" name="accept" checked>
+                            <span class="UICheckbox-fauxInput"></span>
+                            <label for="accept" class="UICheckbox-label">I accept UA Drone Racing’s
+                                <a class="UILink" data-testid="UILink-anchor"
+                                   href="https://docs.google.com/document/d/1Y_Mxn31nrZ38_PpYmBSYIofS6GhEZiHCo5UGD4ycfNM/edit#heading=h.q4l5me82eern"
+                                   rel="noopener" target="_blank"
+                                   title="Open the Terms of Service in a new window">
+                                    Terms of Service and Privacy Policy</a>
+                            </label>
+                            <!-- target="_blank"	Opens the linked document in a new window or tab
+                            rel=”noopener” is an HTML attribute that can be added to external links. It prevents the opening page to gain any kind of access to the original page.
+                            -->
                         </div>
                     </div>
                     <div class="click-area">
                         <button id="sign-up-button" type="button" aria-label="Sign up"
                                 onclick="location.href='#'"
-                                class="button">
+                                class="submit-user-button">
                             <span>Sign up</span>
                         </button>
                     </div>
@@ -432,8 +431,9 @@
                             </div>
                             <span class="UIInput-label">PASSWORD</span>
                         </label>
-                        <div id="log-in-accept" class="log-in-is-selected">
-                            <div class="UICheckbox-label">By tapping Log in, you accept UA Drone Racing’s
+                        <div class="log-in-accept">
+                            <div>
+                                By tapping Log in, you accept UA Drone Racing’s
                                 <a class="UILink" data-testid="UILink-anchor"
                                    href="https://docs.google.com/document/d/1Y_Mxn31nrZ38_PpYmBSYIofS6GhEZiHCo5UGD4ycfNM/edit#heading=h.q4l5me82eern"
                                    rel="noopener" target="_blank"
@@ -445,7 +445,7 @@
                     <div class="click-area">
                         <button id="log-in-button" type="button" aria-label="Log in"
                                 onclick="location.href='#'"
-                                class="button">
+                                class="submit-user-button">
                             <span>Log in</span>
                         </button>
                     </div>
