@@ -16,18 +16,12 @@
     width: 100%;
 }
 
-#question-button{
-    min-width: 25px;
-    background: none;
-    border: none;
-}
-
 .UIDivider-separator {
     flex-basis: 2px;
     flex-grow: 1;
 }
 
-fieldset {
+.birthday-form > div {
     border: none;
 }
 
@@ -125,11 +119,9 @@ a, a:visited, a:hover, a:active {
     color: inherit;
 }
 
-.input-personal-data-container{
-    display: none;
-}
+
 #separator-or-email{
-    display: none;
+    /*display: none;*/
 }
 
 #log-sign-content-wrapper{
@@ -149,7 +141,92 @@ a, a:visited, a:hover, a:active {
 }
 
 *{
-    border: dashed 1px red;
+    /*border: dashed 1px red;*/
+}
+/*select birdthday*/
+.birthday-legend{
+    color: #949AB2;
+    font-size: .75rem;
+    font-weight: 600;
+    letter-spacing: .0625rem;
+    line-height: 1.333333333333333;
+    text-transform: uppercase;
+    margin-bottom: 3%;
 }
 
+.UIDropdown{
+    background: #FFFFFF;
+    border: 0.125rem solid #313443;
+    border-radius: 0.25rem;
+    color: #3ccfcf;
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0 2.5rem 0 0;
+    position: relative;
+    vertical-align: middle;
+    width: auto;
+    margin-left: 1.5rem;
+}
 
+.UIDropdown-first{
+    margin-left: 0;
+}
+
+.UIDropdown-select{
+    appearance: none;
+    background: none;
+    border: none;
+    border-radius: 0.25rem;
+    color: #3ccfcf;
+    cursor: pointer;
+    display: block;
+    font: inherit;
+    font-size: .875rem;
+    font-weight: 600;
+    line-height: 1.285714285714286;
+    margin: 0;
+    outline: none;
+    padding: 0.625rem 1rem 0.625rem 1rem;
+    transition: all .12s cubic-bezier(.47,0,.745,.715);
+    width: calc(100% + 100px);
+}
+
+.UIDropdown-icon{
+    background: inherit;
+    display: block;
+    height: 100%;
+    padding: 0 0.8125rem;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all .12s cubic-bezier(.47,0,.745,.715);
+    width: 1.2rem;
+    color: #3ccfcf;
+    fill: currentColor;
+}
+
+#birthday-form {
+    width: 100%;
+    overflow: hidden;
+}
+
+#question-button{
+    min-width: 25px;
+    background: none;
+    border: none;
+    margin-left: 3%;
+}
+
+.input-personal-data-container{
+    margin-top: 1rem;
+}
+
+.birthday-form-wrapper{
+    margin-bottom: 3%;
+}
+
+.UICheckbox-label{
+    cursor: pointer;
+}
