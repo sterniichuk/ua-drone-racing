@@ -1,6 +1,7 @@
 /*hero img*/
 #hero-image-wrapper {
     width: fit-content;
+    background-color: #ddb496;
 }
 
 #hero-image-wrapper > div > img {
@@ -367,7 +368,7 @@ a, a:visited, a:hover, a:active {
     width: 1.25rem;
 }
 .UICheckbox-fauxInput:after {
-    border: 0.125rem solid #ffcd1f;
+    border: solid #ffcd1f;
     border-width: 0 0 0.125rem 0.125rem;
     box-sizing: initial;
     content: "";
@@ -393,6 +394,7 @@ a, a:visited, a:hover, a:active {
     border-radius: 0.25rem;
     cursor: pointer;
     display: inline-block;
+    /*display: none;*/
     font: inherit;
     max-width: 100%;
     padding: 1.25rem 1.5rem;
@@ -404,5 +406,8 @@ a, a:visited, a:hover, a:active {
     width: 100%;
     background-color: #6BCCCD;
     color: #FFFFFF;
+}
+.down-part{
+    /*display: none;*/
 }
 /*accept end*/
