@@ -24,3 +24,6 @@ a, a:visited, a:hover, a:active {
     border: none;
     font-size: 20px;
 }
+* {
+    /*border: dashed 1px red;*/
+}

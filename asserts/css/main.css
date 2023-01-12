@@ -21,16 +21,25 @@ address {
         height: 50vh;
     }
 }
-/*header*/
+
 header {
     position: sticky;
     box-sizing: border-box;
+    display: flex;
     top: 0;
     background-color: white;
     width: 100%;
     padding: 0.5rem 1rem;
     justify-content: space-between;
+    z-index: 200;
 }
+.mobile-header {
+    justify-content: space-between;
+}
+.header-right-part {
+    justify-content: flex-end;
+}
+
 
 .navigation-menu{
     display: inline-flex;
@@ -113,6 +122,7 @@ header {
     justify-content: flex-start;
     min-height: 2rem;
     padding: 0;
+    display: inline-flex;
 }
 .search-content-wrapper{
     display: flex;
@@ -159,7 +169,6 @@ header {
     outline: none;
     padding-right: 2.25rem;
     width: 100%;
-
 }
 
 /*search end*/

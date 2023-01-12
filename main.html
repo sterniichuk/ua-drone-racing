@@ -15,7 +15,28 @@
             .desktop {
                 display: none;
             }
+            header{
+                width: 100%;
+            }
+            .mobile-header{
+                box-sizing: border-box;
+            }
+            .search-input-box {
+                width: 25%;
+                border-radius: 0.7rem;
+            }
+            .header-right-part{
 
+            }
+            .SiteNavLoginSection-loginButton {
+                padding: 0 0.5rem;
+            }
+            .header-enter-buttons.row {
+
+            }
+            .log-in-button {
+                font-size: 1rem;
+            }
             .more-join-block button, .more-join-block {
                 display: block;
             }
@@ -23,6 +44,12 @@
                 letter-spacing: normal;
                 line-height: 1.5;
                 font-size: 1rem;
+            }
+            .navigation-menu{
+                display: none;
+            }
+            #menu-button{
+                display: flex;
             }
         }
 
@@ -38,40 +65,57 @@
                 text-overflow: ellipsis;
             }
         }
+
     </style>
     <title>Drone Racing</title>
 </head>
 <body>
-<header class="row-in-desktop">
+<div id="mobile-menu" class="mobile-menu" style="display: none">
+    <div class="menu-title-wrapper-mobile row">
+        <a class="SiteHeaderLogo-link" data-testid="logo-button" onclick="showMobileMenu()">
+            <div class="title-logo TopNavigationItem">UA Drone Racing</div>
+        </a>
+        <div class="c1k21r5l">
+            <div class="cefz98">
+                <button class="circle-close-button mobile" type="button" aria-label="Close button"
+                        onclick="showMobileMenu()">
+                    <img src="asserts/img/log-in/close-button.svg" alt="Close button">
+                </button>
+            </div>
+        </div>
+
+    </div>
+    <ul class="menu">
+        <li><a onclick="showMobileMenu()">Home</a></li>
+        <li><a href="#tournaments" onclick="showMobileMenu()">Tournaments</a></li>
+        <li><a href="#where" onclick="showMobileMenu()">Location</a></li>
+        <li><a href="#when" onclick="showMobileMenu()">Work schedule</a></li>
+        <li><a href="#contacts" onclick="showMobileMenu()">Contacts</a></li>
+    </ul>
+</div>
+<header class="row-in-desktop header">
     <div class="navigation-menu row-in-desktop">
-        <div id="menu-title-wrapper" class="row">
+        <div class="menu-title-wrapper" >
             <a class="SiteHeaderLogo-link" data-testid="logo-button" href="#hero-section">
                 <div class="title-logo TopNavigationItem">UA Drone Racing</div>
             </a>
-            <button class="circle-close-button mobile" type="button" aria-label="Close button"
-                    onclick="location.href='#'">
-                <img src="asserts/img/mobile/circle-close-button.svg" alt="Close button">
-            </button>
         </div>
         <nav class="TopNavigation-menuItems">
             <ul class="menu row-in-desktop NavigationTabs">
                 <li><a href="#hero-section">Home</a></li>
                 <li><a href="#tournaments">Tournaments</a></li>
                 <li><a href="#details" class="desktop">Details</a></li>
-                <li><a href="#where" class="mobile">Location</a></li>
-                <li><a href="#when" class="mobile">Work schedule</a></li>
-                <li><a href="#contacts" class="mobile">Contacts</a></li>
             </ul>
         </nav>
     </div>
-    <div class="row">
-        <button id="menu-button" type="button" aria-label="Menu"
-                onclick="location.href='#navigation-menu'"
-                class="mobile">
+    <div class="row mobile-header">
+        <button id="menu-button"  type="button" aria-label="Menu"
+                onclick="showMobileMenu()"
+                class="mobile SiteHeaderLogo-link">
             <img src="./asserts/img/mobile/menu-burger.svg" alt="Menu button">
         </button>
         <div class="header-right-part row">
-            <form class="search-input-box TopNavigationItem">
+            <form id="search-form" class="search-input-box TopNavigationItem">
                 <div class="search-content-wrapper">
                     <div class="search-logo-wrapper">
                         <img class="search-img" src="./asserts/img/search.svg" alt="Search">
@@ -80,8 +124,8 @@
                         <input id="search-input" class="search-input" type="text" placeholder="Race, saver, fight..">
                     </label>
                 </div>
-
             </form>
+
             <div class="header-enter-buttons row">
                 <div class="SiteNavLoginSection-loginButton">
                     <button type="button" aria-label="Log in"
@@ -100,7 +144,7 @@
         </div>
     </div>
 </header>
-<main>
+<main class="main">
     <section id="hero-section">
         <div class="desktop">
             <div class="hero-section-background"></div>
@@ -469,5 +513,6 @@
         </div>
     </section>
 </main>
+<script src="asserts/js/main.js"></script>
 </body>
 </html>
