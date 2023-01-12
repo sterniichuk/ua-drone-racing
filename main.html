@@ -19,6 +19,11 @@
             .more-join-block button, .more-join-block {
                 display: block;
             }
+            .search-input{
+                letter-spacing: normal;
+                line-height: 1.5;
+                font-size: 1rem;
+            }
         }
 
         @media (min-width: 768px) {
@@ -29,6 +34,9 @@
             .row-in-desktop {
                 display: flex;
             }
+            .search-input{
+                text-overflow: ellipsis;
+            }
         }
     </style>
     <title>Drone Racing</title>
@@ -37,14 +45,16 @@
 <header class="row-in-desktop">
     <div class="navigation-menu row-in-desktop">
         <div id="menu-title-wrapper" class="row">
-            <div class="title-logo">UA Drone Racing</div>
+            <a class="SiteHeaderLogo-link" data-testid="logo-button" href="#hero-section">
+                <div class="title-logo TopNavigationItem">UA Drone Racing</div>
+            </a>
             <button class="circle-close-button mobile" type="button" aria-label="Close button"
                     onclick="location.href='#'">
                 <img src="asserts/img/mobile/circle-close-button.svg" alt="Close button">
             </button>
         </div>
-        <nav>
-            <ul class="menu row-in-desktop">
+        <nav class="TopNavigation-menuItems">
+            <ul class="menu row-in-desktop NavigationTabs">
                 <li><a href="#hero-section">Home</a></li>
                 <li><a href="#tournaments">Tournaments</a></li>
                 <li><a href="#details" class="desktop">Details</a></li>
@@ -61,21 +71,30 @@
             <img src="./asserts/img/mobile/menu-burger.svg" alt="Menu button">
         </button>
         <div class="header-right-part row">
-            <div class="search-input-box">
-                <input id="search-input" type="text" placeholder="Race, saver, fight..">
-                <span><img src="./asserts/img/search.svg" alt="Search"></span>
-                <label for="search-input"></label>
-            </div>
-            <div class="header-enter-buttons">
-                <button type="button" aria-label="Log in"
+            <form class="search-input-box TopNavigationItem">
+                <div class="search-content-wrapper">
+                    <div class="search-logo-wrapper">
+                        <img class="search-img" src="./asserts/img/search.svg" alt="Search">
+                    </div>
+                    <label class="search-label" for="search-input">
+                        <input id="search-input" class="search-input" type="text" placeholder="Race, saver, fight..">
+                    </label>
+                </div>
+
+            </form>
+            <div class="header-enter-buttons row">
+                <div class="SiteNavLoginSection-loginButton">
+                    <button type="button" aria-label="Log in"
+                            onclick="location.href='log-in.html'"
+                            class="log-in-button TopNavigationItem">
+                        <span>Log in</span>
+                    </button>
+                </div>
+
+                <button type="button" aria-label="Sign up"
                         onclick="location.href='log-in.html'"
-                        class="log-in-button">
-                    <span>Log in</span>
-                </button>
-                <button type="button" aria-label="Sign in"
-                        onclick="location.href='log-in.html'"
-                        class="Sign-in-button">
-                    <span>Sign in</span>
+                        class="sign-up-button log-in-button TopNavigationItem SiteNavLoginSection-loginButton">
+                    <span>Sign up</span>
                 </button>
             </div>
         </div>

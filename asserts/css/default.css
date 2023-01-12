@@ -15,6 +15,9 @@ address {
 a {
     text-decoration: none;
 }
+a, a:visited, a:hover, a:active {
+    color: inherit;
+}
 
 .node-button{
     background: none;
