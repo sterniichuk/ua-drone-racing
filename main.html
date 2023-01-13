@@ -64,20 +64,21 @@
             .search-input{
                 text-overflow: ellipsis;
             }
+
         }
 
     </style>
     <title>Drone Racing</title>
 </head>
 <body>
-<div id="mobile-menu" class="mobile-menu" style="display: none">
+<div id="mobile-menu" class="mobile-menu mobile" style="display: none">
     <div class="menu-title-wrapper-mobile row">
         <a class="SiteHeaderLogo-link" data-testid="logo-button" onclick="showMobileMenu()">
             <div class="title-logo TopNavigationItem">UA Drone Racing</div>
         </a>
         <div class="c1k21r5l">
             <div class="cefz98">
-                <button class="circle-close-button mobile" type="button" aria-label="Close button"
+                <button class="circle-close-button" type="button" aria-label="Close button"
                         onclick="showMobileMenu()">
                     <img src="asserts/img/log-in/close-button.svg" alt="Close button">
                 </button>
@@ -101,7 +102,7 @@
             </a>
         </div>
         <nav class="TopNavigation-menuItems">
-            <ul class="menu row-in-desktop NavigationTabs">
+            <ul class="row-in-desktop NavigationTabs">
                 <li><a href="#hero-section">Home</a></li>
                 <li><a href="#tournaments">Tournaments</a></li>
                 <li><a href="#details" class="desktop">Details</a></li>

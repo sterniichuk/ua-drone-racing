@@ -7,7 +7,13 @@ const activeColorText = '#292D3C';
 const headlineOfSignUp = document.querySelector('#headline-of-sign-up-switch');
 const headlineOfLogIn = document.querySelector('#headline-of-log-in-switch');
 
+function toggle(className, displayState) {
+    var elements = document.getElementsByClassName(className)
 
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].style.display = displayState;
+    }
+}
 function signUpIsSelected() {
     toggle(signUpClassName, initialState);
     toggle(logInClassName, noneState);
