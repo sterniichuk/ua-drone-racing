@@ -245,6 +245,67 @@ main{
     line-height: 18px;
     color: #FFFFFF;
 }
-
 /*hero-section end*/
+
+/*benefits section*/
+#benefits{
+    position: relative;
+    box-sizing: border-box;
+}
+.benefits-content-wrapper{
+    box-sizing: border-box;
+    margin: 3rem;
+}
+.info-block-benefits-desktop{
+    /*justify-content: space-between;*/
+}
+.info-block-benefits-desktop h3{
+    width: fit-content;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.165px;
+    color: #303545;
+    margin-bottom: 2rem;
+}
+.info-block-benefits-desktop p{
+    width: fit-content;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.165px;
+    color: #4B385D;
+}
+.info-block-benefits-desktop button{
+    width: 10rem;
+}
+.info-block-wrapper{
+}
+#benefits h2{
+    width: 100%;
+    height: fit-content;
+    margin-block: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-align: center;
+    letter-spacing: -0.165px;
+    text-transform: uppercase;
+    color: #303545;
+}
+.benefit-image-container{
+    height: 24rem;
+    width: 50%;
+    border-radius: 21px;
+}
+.info-block-wrapper{
+    gap: 8rem;
+}
+/*benefits section end*/
 /*main end*/
