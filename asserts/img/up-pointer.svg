@@ -1,3 +1,7 @@
-<svg width="15px" height="15px" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1 10L7.5 3L14 10" stroke="black" stroke-linecap="square"/>
+<svg width="15" height="10" xmlns="http://www.w3.org/2000/svg" fill="none">
+
+ <g>
+  <title>Layer 1</title>
+  <path stroke="#5562F7" id="svg_1" stroke-linecap="square" d="m1,6.41855l6.5,-2.83711l6.5,2.83711"/>
+ </g>
 </svg>
