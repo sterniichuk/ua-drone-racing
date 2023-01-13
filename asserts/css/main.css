@@ -176,3 +176,75 @@ header {
 /*right-part end*/
 
 /*header end*/
+
+/*main*/
+.desktop-container{
+    position: relative;
+    justify-items: center;
+}
+.desktop-absolute-info{
+    position: absolute;
+    top: 44%;
+    transform: translate(-50%, -50%);
+    left: 28%;
+}
+.desktop-relative-background{
+    position: relative;
+}
+section{
+    position: relative;
+}
+main{
+    position: relative;
+}
+/*hero-section*/
+.info-block-of-hero-section h1{
+    font-style: normal;
+    font-variant: all-petite-caps;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 3rem;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.165px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 0 4px 4px rgb(173 34 185 / 56%);
+}
+.info-block-of-hero-section h1{
+    width: 34rem;
+    height: 12rem;
+}
+
+.info-block-of-hero-section p{
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2rem;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.165px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    /* border: 1px solid rgba(171, 21, 179, 0.39); */
+    text-shadow: 0 4px 4px rgb(173 34 185 / 56%);
+}
+.info-block-of-hero-section p{
+    width: 37.9rem;
+    height: 10rem;
+}
+.sign-up-now-button{
+    width: 14rem;
+    height: 4.8rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    background: #4255FF;
+    border-radius: 10px;
+    border: none;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+/*hero-section end*/
+/*main end*/
