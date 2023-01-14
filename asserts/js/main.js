@@ -8,26 +8,34 @@ const allImg = document
 const header = document.querySelectorAll('header')[0];
 const headingOfTournaments = document.querySelectorAll('#tournaments > h2')[0];
 const sections = document.querySelectorAll('section');
-const tournamentsSection = document.getElementById('tournaments');
+const heroSection = document.getElementById('hero-section');
 let currentSlideIndex = 0;
 let arrowButtonIsPressed = false;
+
+function isMobile(){
+    const width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+    return (width <= 767);
+}
+
 function setHeightOfSections(){
     const heightOfHeader = header.offsetHeight;
-    for (var j = 0; j < sections.length; j++) {
+    for (let j = 0; j < sections.length; j++) {
         const section = sections[j];
-        section.style.minHeight = "calc(100vh - " + heightOfHeader + "px)";
+        if(isMobile()) {
+            section.style.height = null;
+            continue;
+        }
+        section.style.height = "calc(100vh - " + heightOfHeader + "px)";
+    }
+    if(isMobile()){
+        heroSection.style.height = "calc(100vh - " + heightOfHeader + "px)";
+        heroSection.style.top = heightOfHeader + "px)";
     }
 }
 setHeightOfSections();
+
 window.addEventListener('resize', setHeightOfSections);
 
-function offsetFromTop(){
-    if(arrowButtonIsPressed){
-        return;
-    }
-    const topContentHeight = header.offsetHeight + headingOfTournaments.offsetHeight;
-    window.scroll(0, window.scrollY - topContentHeight);
-}
 function offsetFromTopHeader(sign){
     console.log("scroll " + window.scrollY);
     const y = window.scrollY + sign * header.offsetHeight;
@@ -36,31 +44,31 @@ function offsetFromTopHeader(sign){
     window.scroll(0, y);
 }
 function initScroll(){
-    var length = horizontalScrollList.length;
-    for (var i = 0; i < length; i++) {
+    const length = horizontalScrollList.length;
+    for (let i = 0; i < length; i++) {
         const li = horizontalScrollList[i];
         const index = i;
         li.addEventListener('click', ()=>{
             pressBottomSlider(index);
-            offsetFromTop();
+            headingOfTournaments.scrollIntoView();
+            offsetFromTopHeader(-1);
         });
     }
 }
 initScroll();
 function setFuncForClass(className, func){
     const buttons = document.getElementsByClassName(className);
-    for (var i = 0; i < buttons.length; i++) {
+    for (let i = 0; i < buttons.length; i++) {
         const button = buttons[i];
         button.addEventListener('click', func);
     }
 }
-// setFuncForClass("simple-href-offset", ()=> window.scrollY = 500 );
 setFuncForClass("more-button", ()=> offsetFromTopHeader(-1));
 
 function pressBottomSlider(i){
     arrowButtonIsPressed = false;
     const li = horizontalScrollList[i];
-    for (var j = 0; j < allImg.length; j++) {
+    for (let j = 0; j < allImg.length; j++) {
         const img = allImg[j];
         img.style.display = "none";
     }
@@ -75,12 +83,10 @@ function showMobileMenu() {
     switchState(mobileMenuClassName);
 }
 
-
-
 function switchStateSpec(className, state) {
-    var elements = document.getElementsByClassName(className);
-    for (var i = 0; i < elements.length; i++) {
-        var currentState = elements[i].style.display;
+    const elements = document.getElementsByClassName(className);
+    for (let i = 0; i < elements.length; i++) {
+        const currentState = elements[i].style.display;
         if (currentState.toLowerCase() !== noneState) {
             elements[i].style.display = noneState;
         } else {
@@ -96,8 +102,6 @@ const slidesContainer = document.querySelector('#scroll-list');
 const slides = slidesContainer.querySelectorAll('#scroll-list > li');
 const prevButton = document.querySelector('#arrow-prev');
 const nextButton = document.querySelector('#arrow-next');
-
-
 
 nextButton.addEventListener('click', pressNext);
 

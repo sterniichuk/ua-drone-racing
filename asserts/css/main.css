@@ -1,7 +1,6 @@
 .hero-section-background {
     background-image: url(/asserts/img/hero-image.webp);
     background-size: cover;
-    height: 720px;
 }
 
 address {
@@ -25,7 +24,7 @@ address {
 header {
     position: sticky;
     box-sizing: border-box;
-    display: flex;
+    /*display: flex;*/
     top: 0;
     background-color: white;
     width: 100%;
@@ -187,6 +186,7 @@ header {
 .desktop-container {
     position: relative;
     justify-items: center;
+    height: inherit;
 }
 
 .desktop-absolute-info {
@@ -198,11 +198,13 @@ header {
 
 .desktop-relative-background {
     position: relative;
+    height: inherit;
 }
 
 section {
     position: relative;
 }
+
 
 main {
     position: relative;
@@ -278,11 +280,11 @@ main {
 #benefits {
     position: relative;
     box-sizing: border-box;
-    margin: 3rem;
 }
 
 .benefits-content-wrapper {
     box-sizing: border-box;
+    padding: 3rem;
 }
 
 .info-block-benefits-desktop {
@@ -536,6 +538,10 @@ main {
 /*small-scroll end*/
 
 /*carousel end*/
+#tournaments{
+    display: grid;
+    padding: 0 1% 1%;
+}
 /*tournaments-section end*/
 
 /*details*/

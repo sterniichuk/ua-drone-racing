@@ -10,49 +10,6 @@
     <link rel="stylesheet" href="./asserts/css/mobile.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-        @media (max-width: 767px) {
-            .desktop {
-                display: none;
-            }
-            header{
-                width: 100%;
-            }
-            .mobile-header{
-                box-sizing: border-box;
-            }
-            .search-input-box {
-                width: 25%;
-                border-radius: 0.7rem;
-            }
-            .header-right-part{
-
-            }
-            .SiteNavLoginSection-loginButton {
-                padding: 0 0.5rem;
-            }
-            .header-enter-buttons.row {
-
-            }
-            .log-in-button {
-                font-size: 1rem;
-            }
-            .more-join-block button, .more-join-block {
-                display: block;
-            }
-            .search-input{
-                letter-spacing: normal;
-                line-height: 1.5;
-                font-size: 1rem;
-            }
-            .navigation-menu{
-                display: none;
-            }
-            #menu-button{
-                display: flex;
-            }
-        }
-
         @media (min-width: 768px) {
             .mobile {
                 display: none;
@@ -64,9 +21,10 @@
             .search-input{
                 text-overflow: ellipsis;
             }
-
+            /*#benefits {*/
+            /*    padding: 3rem;*/
+            /*}*/
         }
-
     </style>
     <title>Drone Racing</title>
 </head>
@@ -151,7 +109,7 @@
             <div class="hero-section-background desktop-relative-background"></div>
             <div class="info-block info-block-of-hero-section desktop-absolute-info">
                 <h1>The biggest tracks in Ukraine.</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur
+                <p >Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit. Integer non lorem ipsum.
                     commodo ipsum </p>
                 <button type="button" aria-label="Sign in now" class="sign-up-now-button"
@@ -167,16 +125,28 @@
             </div>
             <div class="text-info">
                 <h2>UA Drone Racing</h2>
-                <h3>The biggest tracks in Ukraine</h3>
+                <h3 class="text-info-paragraph">The biggest tracks in Ukraine</h3>
             </div>
         </div>
     </section>
     <section id="benefits">
-        <div class="background-wrapper mobile">
-            <div class="hero-background first-background" style="opacity: 50%"></div>
-            <img class="image-background" src="./asserts/img/mobile/benefits-image.webp" alt="Track for drone racing">
+        <div class="mobile">
+            <div class="background-wrapper">
+                <div class="hero-background first-background" style="opacity: 50%"></div>
+                <img class="image-background" src="./asserts/img/mobile/benefits-image.jpg" alt="Track for drone racing">
+            </div>
+            <div class="text-info">
+                <h2>We have 7 kinds
+                    of drone racing
+                    Tournaments </h2>
+                <p class="text-info-paragraph">Generally every track
+                    is bigger in 2 times
+                    than another
+                    in Ukraine!</p>
+            </div>
         </div>
-        <div class="benefits-content-wrapper">
+
+        <div class="benefits-content-wrapper desktop">
             <h2 class="desktop-heading-of-section">We have 7 kinds of drone racing tournaments</h2>
             <div class="row info-block-wrapper">
                 <div class="info-block info-block-benefits-desktop">
@@ -418,51 +388,56 @@
         </div>
     </section>
     <section id="where" class="mobile">
-        <div class="background-wrapper">
-            <div class="hero-background first-background" style="opacity: 25%"></div>
-            <img class="image-background" src="./asserts/img/mobile/place-mobile.webp" alt="Drone racing">
-        </div>
-        <div class="text-info">
-            <h2>Where are we?</h2>
-            <p>Peremogy Avenue, 37,
-                Kyiv, 03056</p>
+        <div class="mobile">
+            <div class="background-wrapper">
+                <div class="hero-background first-background" style="opacity: 25%"></div>
+                <img class="image-background" src="./asserts/img/mobile/place-mobile.webp" alt="Drone racing">
+            </div>
+            <div class="text-info">
+                <h2>Location</h2>
+                <p class="text-info-paragraph">Peremogy Avenue,
+                    37, <span>Kyiv, 03056</span></p>
+            </div>
         </div>
     </section>
     <section id="when" class="mobile">
-        <div class="background-wrapper">
-            <div class="hero-background first-background" style="opacity: 7%"></div>
-            <img class="image-background" src="./asserts/img/mobile/when.webp" alt="Drone racing">
+        <div class="mobile">
+            <div class="background-wrapper">
+                <div class="hero-background first-background" style="opacity: 7%"></div>
+                <img class="image-background" src="./asserts/img/mobile/when.webp" alt="Drone racing">
+            </div>
+            <div class="text-info">
+                <h2>WHEN</h2>
+                <p class="text-info-paragraph">Racing for everyone: <br> Mon - Fri
+                    (
+                    <time>10:00</time>
+                    -
+                    <time>17:00</time>
+                    )<br>
+                    Autumn Tournament:<br>
+                    <time datetime="10-22">22</time>
+                    -
+                    <time datetime="10-25">25</time>
+                    October
+                    (
+                    <time>16:00</time>
+                    -
+                    <time>22:00</time>
+                    )
+                </p>
+            </div>
         </div>
-        <div class="text-info">
-            <h2>WHEN</h2>
-            <p>Racing for everyone: <br> Mon - Fri
-                (
-                <time>10:00</time>
-                -
-                <time>17:00</time>
-                )<br>
-                Autumn Tournament:<br>
-                <time datetime="10-22">22</time>
-                -
-                <time datetime="10-25">25</time>
-                October
-                (
-                <time>16:00</time>
-                -
-                <time>22:00</time>
-                )
-            </p>
-        </div>
+
     </section>
     <section id="contacts" class="mobile">
-        <div class="background-wrapper">
-            <div class="hero-background first-background" style="opacity: 7%"></div>
-            <img class="image-background" src="./asserts/img/mobile/contacts.webp" alt="Drone racing">
-        </div>
-        <div class="info-block">
+        <div class="mobile">
+            <div class="background-wrapper">
+                <div class="hero-background first-background" style="opacity: 7%"></div>
+                <img class="image-background" src="./asserts/img/mobile/contacts.webp" alt="Drone racing">
+            </div>
             <div class="text-info">
                 <h2>Contacts</h2>
-                <address>
+                <address class="text-info-paragraph">
                     <ul>
                         <li><a href="tel:+3803565420">+3803565420</a></li>
                         <li><a href="tel:+3803565421">+3803565421</a></li>
