@@ -74,7 +74,7 @@
 <div id="mobile-menu" class="mobile-menu mobile" style="display: none">
     <div class="menu-title-wrapper-mobile row">
         <a class="SiteHeaderLogo-link" data-testid="logo-button" onclick="showMobileMenu()">
-            <div class="title-logo TopNavigationItem">UA Drone Racing</div>
+            <div class="title-logo TopNavigationItem simple-href-offset">UA Drone Racing</div>
         </a>
         <div class="c1k21r5l">
             <div class="cefz98">
@@ -97,15 +97,15 @@
 <header class="row-in-desktop header">
     <div class="navigation-menu row-in-desktop">
         <div class="menu-title-wrapper" >
-            <a class="SiteHeaderLogo-link" data-testid="logo-button" href="#hero-section">
+            <a class="SiteHeaderLogo-link simple-href-offset" data-testid="logo-button" href="#hero-section">
                 <div class="title-logo TopNavigationItem">UA Drone Racing</div>
             </a>
         </div>
         <nav class="TopNavigation-menuItems">
             <ul class="row-in-desktop NavigationTabs">
-                <li><a href="#hero-section">Home</a></li>
-                <li><a href="#tournaments">Tournaments</a></li>
-                <li><a href="#details" class="desktop">Details</a></li>
+                <li><a class="simple-href-offset" href="#hero-section">Home</a></li>
+                <li><a class="simple-href-offset" href="#tournaments">Tournaments</a></li>
+                <li><a class="simple-href-offset desktop" href="#details" >Details</a></li>
             </ul>
         </nav>
     </div>
@@ -196,11 +196,8 @@
     <section id="tournaments">
         <h2 class="desktop-heading-of-section">Tournaments</h2>
         <div class="slider-wrapper">
-            <button class="slide-arrow" id="arrow-prev">
-                &#8249;
-            </button>
-            <button class="slide-arrow" id="arrow-next">
-                &#8250;
+            <button class="slide-arrow" onclick="location.href='#tournaments'" id="arrow-prev">
+                <img src="asserts/img/tournaments/left.svg" alt="right">
             </button>
             <ul id="scroll-list" class="scroll-list snaps-inline">
                 <li>
@@ -367,6 +364,9 @@
                     </div>
                 </li>
             </ul>
+            <button class="slide-arrow" onclick="location.href='#tournaments'" id="arrow-next">
+                <img src="asserts/img/tournaments/right.svg" alt="right">
+            </button>
         </div>
 
 
