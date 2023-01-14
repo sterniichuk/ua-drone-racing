@@ -9,14 +9,14 @@ address {
 }
 
 @media (max-width: 767px) {
-    .node img{
+    .node img {
         width: 50vh;
         height: 100vh;
     }
 }
 
 @media (min-width: 768px) {
-    .node img{
+    .node img {
         width: 50vh;
         height: 50vh;
     }
@@ -33,15 +33,17 @@ header {
     justify-content: space-between;
     z-index: 200;
 }
+
 .mobile-header {
     justify-content: space-between;
 }
+
 .header-right-part {
     justify-content: flex-end;
 }
 
 
-.navigation-menu{
+.navigation-menu {
     display: inline-flex;
     align-items: center;
 }
@@ -52,7 +54,7 @@ header {
     padding: 0 0.5rem;
 }
 
-.title-logo{
+.title-logo {
     display: flex;
     align-items: center;
     text-align: center;
@@ -64,14 +66,14 @@ header {
     cursor: pointer;
 }
 
-.TopNavigation-menuItems{
+.TopNavigation-menuItems {
     height: 100%;
     padding: 0 0.5rem;
     align-items: center;
     display: inline-flex;
 }
 
-.NavigationTabs{
+.NavigationTabs {
     align-items: center;
     flex-shrink: 0;
     height: 100%;
@@ -79,19 +81,20 @@ header {
     gap: 1rem;
 }
 
-.NavigationTabs > li{
+.NavigationTabs > li {
     color: #282E3E;
     letter-spacing: -0.165px;
     font-weight: 500;
     font-size: 1rem;
     line-height: 19px;
 }
+
 /*right-part*/
-.SiteNavLoginSection-loginButton{
+.SiteNavLoginSection-loginButton {
     padding: 0 1.5rem;
 }
 
-.log-in-button{
+.log-in-button {
     padding: 0.375rem 0.75rem;
     background: none;
     font-size: .875rem;
@@ -110,12 +113,13 @@ header {
     color: #292D3C;
 }
 
-.sign-up-button{
+.sign-up-button {
     background: #ffcd1f;
     color: #282e3e;
 }
+
 /*search*/
-.search-input-box{
+.search-input-box {
     border: 1px solid #DBDEE7;
     border-radius: 0.5rem;
     background: #F6F7FB;
@@ -124,14 +128,15 @@ header {
     padding: 0;
     display: inline-flex;
 }
-.search-content-wrapper{
+
+.search-content-wrapper {
     display: flex;
     position: relative;
     width: 100%;
     align-items: stretch;
 }
 
-.search-logo-wrapper{
+.search-logo-wrapper {
     padding-left: 0.5rem;
     padding-right: 0.625rem;
     padding-top: 0.3875rem;
@@ -139,14 +144,14 @@ header {
     z-index: 11;
 }
 
-.search-img{
+.search-img {
     fill: currentColor;
     color: inherit;
     display: inline-block;
     box-sizing: inherit;
 }
 
-.search-label{
+.search-label {
     background: #F6F7FB;
     height: 2rem;
     margin-left: 2.5rem;
@@ -160,8 +165,9 @@ header {
     box-sizing: inherit;
     flex-direction: column;
 }
-.search-input{
-    background-color:  #F6F7FB;
+
+.search-input {
+    background-color: #F6F7FB;
     border: 0;
     border-bottom: none;
     color: #515664;
@@ -178,27 +184,32 @@ header {
 /*header end*/
 
 /*main*/
-.desktop-container{
+.desktop-container {
     position: relative;
     justify-items: center;
 }
-.desktop-absolute-info{
+
+.desktop-absolute-info {
     position: absolute;
     top: 44%;
     transform: translate(-16%, -44%);
     left: 16%;
 }
-.desktop-relative-background{
+
+.desktop-relative-background {
     position: relative;
 }
-section{
+
+section {
     position: relative;
 }
-main{
+
+main {
     position: relative;
 }
+
 /*hero-section*/
-.info-block-of-hero-section h1{
+.info-block-of-hero-section h1 {
     font-style: normal;
     font-variant: all-petite-caps;
     font-weight: 700;
@@ -211,12 +222,13 @@ main{
     color: #FFFFFF;
     text-shadow: 0 4px 4px rgb(173 34 185 / 56%);
 }
-.info-block-of-hero-section h1{
+
+.info-block-of-hero-section h1 {
     width: 34rem;
     height: 12rem;
 }
 
-.info-block-of-hero-section p{
+.info-block-of-hero-section p {
     font-weight: 400;
     font-size: 2rem;
     line-height: 2rem;
@@ -228,11 +240,13 @@ main{
     /* border: 1px solid rgba(171, 21, 179, 0.39); */
     text-shadow: 0 4px 4px rgb(173 34 185 / 56%);
 }
-.info-block-of-hero-section p{
+
+.info-block-of-hero-section p {
     width: 37.9rem;
     height: 10rem;
 }
-.sign-up-now-button{
+
+.sign-up-now-button {
     width: 14rem;
     height: 4.8rem;
     margin-top: 2rem;
@@ -245,8 +259,9 @@ main{
     line-height: 18px;
     color: #FFFFFF;
 }
+
 /*hero-section end*/
-.desktop-heading-of-section{
+.desktop-heading-of-section {
     width: 100%;
     height: fit-content;
     padding-bottom: 2rem;
@@ -258,19 +273,23 @@ main{
     text-transform: uppercase;
     color: #303545;
 }
+
 /*benefits section*/
-#benefits{
+#benefits {
     position: relative;
     box-sizing: border-box;
     margin: 3rem;
 }
-.benefits-content-wrapper{
+
+.benefits-content-wrapper {
     box-sizing: border-box;
 }
-.info-block-benefits-desktop{
+
+.info-block-benefits-desktop {
     margin-block: auto;
 }
-.info-block-benefits-desktop h3{
+
+.info-block-benefits-desktop h3 {
     width: fit-content;
     font-style: normal;
     font-weight: 700;
@@ -282,7 +301,8 @@ main{
     color: #303545;
     margin-bottom: 2rem;
 }
-.info-block-benefits-desktop p{
+
+.info-block-benefits-desktop p {
     width: fit-content;
     font-style: normal;
     font-weight: 400;
@@ -293,34 +313,39 @@ main{
     letter-spacing: -0.165px;
     color: #4B385D;
 }
-.info-block-benefits-desktop button{
+
+.info-block-benefits-desktop button {
     width: 10rem;
 }
 
-.benefit-image-container{
+.benefit-image-container {
     height: 24rem;
     width: 50%;
     border-radius: 21px;
 }
-.info-block-wrapper{
+
+.info-block-wrapper {
     gap: 8rem;
 }
+
 /*benefits section end*/
 
 /*tournaments-section*/
 
-#scroll-list > li > div > img{
+#scroll-list > li > div > img {
     height: 24rem;
     width: 50%;
     border-radius: 21px;
 }
-#scroll-list > li > div{
+
+#scroll-list > li > div {
     gap: 20%;
     margin-inline: 5rem;
     width: fit-content;
     height: inherit;
 }
-.text-info-of-node h3{
+
+.text-info-of-node h3 {
     width: 100%;
     height: fit-content;
     margin-block: 2rem;
@@ -331,7 +356,8 @@ main{
     letter-spacing: -0.165px;
     color: #303545;
 }
-.text-info-of-node p{
+
+.text-info-of-node p {
     width: fit-content;
     font-style: normal;
     font-weight: 400;
@@ -343,11 +369,12 @@ main{
     color: #4B385D;
 }
 
-.more-join-block{
+.more-join-block {
     display: flex;
     gap: 1.2rem;
 }
-.more-join-block button{
+
+.more-join-block button {
     width: 8rem;
     height: 3.8rem;
     margin-top: 2rem;
@@ -358,7 +385,8 @@ main{
     font-size: 20px;
     line-height: 18px;
 }
-.more-join-block button span{
+
+.more-join-block button span {
     width: 100%;
     height: inherit;
     font-style: normal;
@@ -371,21 +399,25 @@ main{
     text-align: center;
     letter-spacing: -0.165px;
 }
-.more-button span{
+
+.more-button span {
     background: #4255FF;
     color: #FFFFFF;
     border-radius: 10px;
 }
-.join-button span{
+
+.join-button span {
     background: #F7CF4C;
     color: #292D3C;;
     border-radius: 10px;
 }
+
 /*carousel*/
 .slider-wrapper {
     position: relative;
     overflow: hidden;
 }
+
 .scroll-list {
     min-height: fit-content;
     /*height: calc(100vh - 40px);*/
@@ -400,10 +432,12 @@ main{
     overflow-y: hidden;
     padding-bottom: 2%;
 }
+
 .scroll-list ::-webkit-scrollbar {
-     width: 0;
-     height: 0;
- }
+    width: 0;
+    height: 0;
+}
+
 .scroll-list > li {
     box-sizing: border-box;
     width: 100%;
@@ -414,6 +448,7 @@ main{
     justify-content: center;
     align-items: center;
 }
+
 .slide-arrow {
     position: absolute;
     display: flex;
@@ -434,10 +469,11 @@ main{
     transform: translateY(-50%);
 }
 
-.slide-arrow *{
+.slide-arrow * {
     margin-block: auto;
     width: inherit;
 }
+
 .snaps-inline {
     scroll-snap-type: inline mandatory;
     scroll-padding-inline: 1rem;
@@ -447,41 +483,44 @@ main{
     scroll-snap-align: start;
 }
 
-.slide-arrow:hover,:focus {
+.slide-arrow:hover, :focus {
     opacity: 1;
 }
 
 #arrow-prev {
-     left: 0;
-     margin-left: 15px;
+    left: 0;
+    margin-left: 15px;
 }
 
 #arrow-next {
-     right: 0;
-     margin-right: 15px;
- }
+    right: 0;
+    margin-right: 15px;
+}
 
 /*small-scroll*/
 
-#horizontal-scroll-list-of-tournaments{
+#horizontal-scroll-list-of-tournaments {
     display: flex;
     justify-content: space-between;
     margin-inline: 3rem;
     align-items: baseline;
 }
-#horizontal-scroll-list-of-tournaments li img{
+
+#horizontal-scroll-list-of-tournaments li img {
     width: 4rem;
     margin-inline: auto;
 }
-#horizontal-scroll-list-of-tournaments > li > *{
+
+#horizontal-scroll-list-of-tournaments > li > * {
     display: block;
 }
-#horizontal-scroll-list-of-tournaments li{
+
+#horizontal-scroll-list-of-tournaments li {
     cursor: pointer;
     align-items: center;
 }
 
-#horizontal-scroll-list-of-tournaments > li > div > span{
+#horizontal-scroll-list-of-tournaments > li > div > span {
     font-style: normal;
     font-weight: 700;
     font-size: 3vw;
@@ -498,7 +537,30 @@ main{
 
 /*carousel end*/
 /*tournaments-section end*/
-section *{
-    /*max-height: calc(100vh - 2rem);*/
+
+/*details*/
+#details {
+    position: relative;
+    margin-top: 2rem;
+    box-sizing: border-box;
+    padding: 3rem;
+    background: #29FF0021;
 }
+
+.info-block-details * {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    letter-spacing: -0.165px;
+    color: #4B385D;
+}
+
+.info-details-block-wrapper {
+    justify-content: space-between;
+    margin-block: auto;
+}
+
+/*details end*/
+
 /*main end*/

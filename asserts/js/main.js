@@ -12,15 +12,10 @@ const tournamentsSection = document.getElementById('tournaments');
 let currentSlideIndex = 0;
 let arrowButtonIsPressed = false;
 function setHeightOfSections(){
-    const all = document.querySelectorAll('section *');
     const heightOfHeader = header.offsetHeight;
-    for (var i = 0; i < all.length; i++) {
-        const element = all[i];
-        element.style.maxHeight = "calc(100vh - " + heightOfHeader + "px)";
-    }
     for (var j = 0; j < sections.length; j++) {
         const section = sections[j];
-        section.style.height = "calc(100vh - " + heightOfHeader + "px)";
+        section.style.minHeight = "calc(100vh - " + heightOfHeader + "px)";
     }
 }
 setHeightOfSections();
