@@ -12,6 +12,7 @@ const sections = document.querySelectorAll('section');
 const heroSection = document.getElementById('hero-section');
 let currentSlideIndex = 0;
 let arrowButtonIsPressed = false;
+const bottomScroll = document.getElementById('horizontal-scroll-list-of-tournaments');
 
 function isMobile(){
     const width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
@@ -52,6 +53,10 @@ function initScroll(){
         const index = i;
         li.addEventListener('click', ()=>{
             pressBottomSlider(index);
+            if(isMobile()){
+                headingOfTournamentsMobile.scrollIntoView();
+                return 0;
+            }
             headingOfTournaments.scrollIntoView();
             offsetFromTopHeader(-1);
         });
@@ -65,7 +70,12 @@ function setFuncForClass(className, func){
         button.addEventListener('click', func);
     }
 }
-setFuncForClass("more-button", ()=> offsetFromTopHeader(-1));
+setFuncForClass("more-button", ()=> {
+    if(isMobile()){
+        return 0;
+    }
+    offsetFromTopHeader(-1)
+});
 
 function pressBottomSlider(i){
     arrowButtonIsPressed = false;
@@ -77,6 +87,9 @@ function pressBottomSlider(i){
     const img = li.querySelectorAll('img');
     img[0].style.display = "block";
     currentSlideIndex = i;
+    if(!isMobile()){
+        // bottomScroll.scrollTo()
+    }
 }
 pressBottomSlider(0);
 function showMobileMenu() {
