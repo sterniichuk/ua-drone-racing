@@ -1,6 +1,7 @@
 const noneState = "none";
 const mobileMenuClassName = "mobile-menu";
 const main = "main";
+const initialState = "initial";
 
 const horizontalScrollList = document.querySelectorAll('#horizontal-scroll-list-of-tournaments > li');
 const allImg = document
