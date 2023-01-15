@@ -87,7 +87,7 @@
 }
 
 #menu-button img {
-    max-width: 80%;
+    max-width: 100%;
 }
 
 @media (max-width: 767px) {
@@ -193,6 +193,7 @@
 
     #menu-button {
         display: flex;
+        margin-block: auto;
     }
 
     section {
@@ -477,6 +478,11 @@
     }
     .slide-arrow-mobile > img{
         height: 100%;
+        opacity: 0.7;
+    }
+
+    .slide-arrow-mobile > img:hover, :focus {
+        opacity: 1;
     }
     .snaps-inline{
         scroll-padding-inline: 0;
@@ -485,6 +491,9 @@
         overflow: scroll;
         scroll-behavior: smooth;
         margin-inline: 0;
+    }
+    header{
+        /*display: block;*/
     }
     /*scroll end*/
 

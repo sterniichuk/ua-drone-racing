@@ -1,5 +1,6 @@
+// import {signUpIsSelected, logInIsSelected} from "./log-in";
+
 const noneState = "none";
-const initialState = "initial";
 const mobileMenuClassName = "mobile-menu";
 const main = "main";
 const horizontalScrollList = document.querySelectorAll('#horizontal-scroll-list-of-tournaments > li');
@@ -18,6 +19,20 @@ function isMobile(){
     const width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
     return (width <= 767);
 }
+// function setOffsetForDesktopLinks(massive){
+//     const length = massive.length;
+//     for (let i = 0; i < length; i++) {
+//         let element = massive[i];
+//         setOffsetForDesktopLink(element);
+//         console.log(element);
+//     }
+// }
+// setOffsetForDesktopLinks(document.querySelectorAll('nav > ul > li > a'));
+// function setOffsetForDesktopLink(element){
+//     element.addEventListener('click', ()=>{
+//         window.scroll(0, 0);
+//     });
+// }
 
 function setHeightOfSections(){
     const heightOfHeader = header.offsetHeight;
@@ -39,10 +54,7 @@ setHeightOfSections();
 window.addEventListener('resize', setHeightOfSections);
 
 function offsetFromTopHeader(sign){
-    console.log("scroll " + window.scrollY);
     const y = window.scrollY + sign * header.offsetHeight;
-    console.log(y);
-    console.log("scroll after " + window.scrollY);
     window.scroll(0, y);
 }
 
@@ -77,6 +89,7 @@ setFuncForClass("more-button", ()=> {
     offsetFromTopHeader(-1)
 });
 
+
 function pressBottomSlider(i){
     arrowButtonIsPressed = false;
     const li = horizontalScrollList[i];
@@ -89,11 +102,8 @@ function pressBottomSlider(i){
     currentSlideIndex = i;
     if(isMobile()){
         console.log(li.clientWidth);
-        if(i !== 0){
-        }
-        bottomScroll.scrollTo(li.clientWidth * (i - 1),0);
-        // img[0].parentElement.scrollIntoView();
-        // headingOfTournaments.scrollIntoView();
+        const width = i === 0? 0 : horizontalScrollList[i - 1].clientWidth * (i - 1);
+        bottomScroll.scrollTo(width,0);
     }
 }
 pressBottomSlider(0);
