@@ -474,7 +474,9 @@
     .slide-arrow-mobile > img{
         height: 100%;
     }
-
+    .snaps-inline{
+        scroll-padding-inline: 0;
+    }
     /*scroll end*/
 
 }
