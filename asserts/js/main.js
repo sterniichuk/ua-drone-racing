@@ -87,8 +87,13 @@ function pressBottomSlider(i){
     const img = li.querySelectorAll('img');
     img[0].style.display = "block";
     currentSlideIndex = i;
-    if(!isMobile()){
-        // bottomScroll.scrollTo()
+    if(isMobile()){
+        console.log(li.clientWidth);
+        if(i !== 0){
+        }
+        bottomScroll.scrollTo(li.clientWidth * (i - 1),0);
+        // img[0].parentElement.scrollIntoView();
+        // headingOfTournaments.scrollIntoView();
     }
 }
 pressBottomSlider(0);

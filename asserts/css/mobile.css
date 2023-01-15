@@ -483,6 +483,7 @@
     }
     #horizontal-scroll-list-of-tournaments{
         overflow: scroll;
+        scroll-behavior: smooth;
         margin-inline: 0;
     }
     /*scroll end*/
