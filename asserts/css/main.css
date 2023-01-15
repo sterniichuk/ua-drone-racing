@@ -190,7 +190,9 @@ header {
 }
 
 .desktop-absolute-info {
+    height: inherit;
     position: absolute;
+    overflow: hidden;
     top: 44%;
     transform: translate(-16%, -44%);
     left: 16%;
@@ -263,22 +265,12 @@ main {
 }
 
 /*hero-section end*/
-.desktop-heading-of-section {
-    width: 100%;
-    height: fit-content;
-    padding-bottom: 2rem;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 2.5rem;
-    text-align: center;
-    letter-spacing: -0.165px;
-    text-transform: uppercase;
-    color: #303545;
-}
+
 
 /*benefits section*/
 #benefits {
     position: relative;
+    overflow: hidden;
     box-sizing: border-box;
 }
 
@@ -327,80 +319,12 @@ main {
 }
 
 .info-block-wrapper {
-    gap: 8rem;
+    gap: 3vw;
 }
 
 /*benefits section end*/
 
 /*tournaments-section*/
-
-#scroll-list > li > div > img {
-    height: 24rem;
-    width: 50%;
-    border-radius: 21px;
-}
-
-#scroll-list > li > div {
-    gap: 20%;
-    margin-inline: 5rem;
-    width: fit-content;
-    height: inherit;
-}
-
-.text-info-of-node h3 {
-    width: 100%;
-    height: fit-content;
-    margin-block: 2rem;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 2.5rem;
-    text-align: left;
-    letter-spacing: -0.165px;
-    color: #303545;
-}
-
-.text-info-of-node p {
-    width: fit-content;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.5rem;
-    line-height: 1.8rem;
-    display: flex;
-    align-items: center;
-    letter-spacing: -0.165px;
-    color: #4B385D;
-}
-
-.more-join-block {
-    display: flex;
-    gap: 1.2rem;
-}
-
-.more-join-block button {
-    width: 8rem;
-    height: 3.8rem;
-    margin-top: 2rem;
-    cursor: pointer;
-    border-radius: 10px;
-    border: none;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 18px;
-}
-
-.more-join-block button span {
-    width: 100%;
-    height: inherit;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 2rem;
-    line-height: 56%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    letter-spacing: -0.165px;
-}
 
 .more-button span {
     background: #4255FF;
@@ -508,10 +432,7 @@ main {
     align-items: baseline;
 }
 
-#horizontal-scroll-list-of-tournaments li img {
-    width: 4rem;
-    margin-inline: auto;
-}
+
 
 #horizontal-scroll-list-of-tournaments > li > * {
     display: block;
@@ -542,6 +463,36 @@ main {
     display: grid;
     padding: 0 1% 1%;
 }
+.more-join-block {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.more-join-block button {
+    width: 8rem;
+    height: 3.8rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 18px;
+}
+
+.more-join-block button span {
+    width: 100%;
+    height: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 56%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.165px;
+}
 /*tournaments-section end*/
 
 /*details*/
@@ -551,6 +502,7 @@ main {
     box-sizing: border-box;
     padding: 3rem;
     background: #29FF0021;
+    overflow: hidden;
 }
 
 .info-block-details * {
@@ -568,5 +520,70 @@ main {
 }
 
 /*details end*/
-
+.mobile-scroll-header{
+    display: none;
+}
 /*main end*/
+@media (min-width: 768px) {
+    .row-in-desktop {
+        display: flex;
+    }
+    .search-input{
+        text-overflow: ellipsis;
+    }
+    #horizontal-scroll-list-of-tournaments li img {
+        width: 4rem;
+        margin-inline: auto;
+    }
+    #scroll-list > li > div > img {
+        height: 24rem;
+        width: 50%;
+        border-radius: 21px;
+    }
+
+    #scroll-list > li > div {
+        gap: 20%;
+        margin-inline: 5rem;
+        width: fit-content;
+        height: inherit;
+    }
+
+    .text-info-of-node h3 {
+        width: 100%;
+        height: fit-content;
+        margin-block: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2.5rem;
+        text-align: left;
+        letter-spacing: -0.165px;
+        color: #303545;
+    }
+
+    .text-info-of-node p {
+        width: fit-content;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        display: flex;
+        align-items: center;
+        letter-spacing: -0.165px;
+        color: #4B385D;
+    }
+
+    .desktop-heading-of-section {
+        width: 100%;
+        height: fit-content;
+        padding-bottom: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2.5rem;
+        text-align: center;
+        letter-spacing: -0.165px;
+        text-transform: uppercase;
+        color: #303545;
+    }
+
+
+}
