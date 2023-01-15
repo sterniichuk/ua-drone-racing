@@ -17,15 +17,9 @@
             .mobile {
                 display: none;
             }
-            .mobile-scroll-header{
-                display: none;
-            }
         }
         @media (max-width: 767px) {
             .desktop {
-                display: none;
-            }
-            .desktop-heading-of-section{
                 display: none;
             }
         }
@@ -151,7 +145,7 @@
         </div>
 
         <div class="benefits-content-wrapper desktop">
-            <h2 class="desktop-heading-of-section">We have 7 kinds of drone racing tournaments</h2>
+            <h2 class="desktop-heading-of-section desktop">We have 7 kinds of drone racing tournaments</h2>
             <div class="row info-block-wrapper">
                 <div class="info-block info-block-benefits-desktop">
                     <h3>Generally every track is bigger in 2 times than another in Ukraine!</h3>
@@ -168,17 +162,15 @@
         </div>
     </section>
     <section id="tournaments">
-        <h2 class="desktop-heading-of-section">Tournaments</h2>
-        <div class="menu-title-wrapper-mobile mobile-scroll-header">
+        <h2 class="desktop-heading-of-section desktop">Tournaments</h2>
+        <div class="menu-title-wrapper-mobile mobile-scroll-header mobile">
+            <button class=" slide-arrow-mobile" onclick="location.href='#tournaments'" id="arrow-prev-mobile">
+                <img src="asserts/img/tournaments/left.svg" alt="right">
+            </button>
             <h2 class="mobile-heading-of-tournaments">Tournaments</h2>
-            <div class="c1k21r5l">
-                <div class="cefz98">
-                    <button class="circle-close-button" type="button" aria-label="Close button"
-                            onclick="showMobileMenu()">
-                        <img src="asserts/img/log-in/close-button.svg" alt="Close button">
-                    </button>
-                </div>
-            </div>
+            <button class=" slide-arrow-mobile" onclick="location.href='#tournaments'" id="arrow-next-mobile">
+                <img src="asserts/img/tournaments/right.svg" alt="right">
+            </button>
         </div>
         <div class="slider-wrapper slider-wrapper-mobile">
             <button class="slide-arrow" onclick="location.href='#tournaments'" id="arrow-prev">
@@ -472,7 +464,7 @@
         </div>
     </section>
     <section id="details" class="benefits-content-wrapper desktop">
-        <h2 class="desktop-heading-of-section">Details</h2>
+        <h2 class="desktop-heading-of-section desktop">Details</h2>
         <div class="info-details-block-wrapper row">
             <div class="info-block info-block-details">
                 <p>Peremogy Avenue, 37, Kyiv, 03056.<br>Racing for everyone:<br>

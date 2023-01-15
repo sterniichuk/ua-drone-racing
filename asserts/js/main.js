@@ -7,6 +7,7 @@ const allImg = document
     .querySelectorAll('#horizontal-scroll-list-of-tournaments > li > img');
 const header = document.querySelectorAll('header')[0];
 const headingOfTournaments = document.querySelectorAll('#tournaments > h2')[0];
+const headingOfTournamentsMobile = document.querySelectorAll('#tournaments > .mobile-scroll-header ')[0];
 const sections = document.querySelectorAll('section');
 const heroSection = document.getElementById('hero-section');
 let currentSlideIndex = 0;
@@ -22,7 +23,7 @@ function setHeightOfSections(){
     for (let j = 0; j < sections.length; j++) {
         const section = sections[j];
         if(isMobile()) {
-            section.style.height = null;
+            section.style.height = "100vh";
             continue;
         }
         section.style.height = "calc(100vh - " + heightOfHeader + "px)";
@@ -43,6 +44,7 @@ function offsetFromTopHeader(sign){
     console.log("scroll after " + window.scrollY);
     window.scroll(0, y);
 }
+
 function initScroll(){
     const length = horizontalScrollList.length;
     for (let i = 0; i < length; i++) {
@@ -101,11 +103,15 @@ function switchState(className) {
 const slidesContainer = document.querySelector('#scroll-list');
 const slides = slidesContainer.querySelectorAll('#scroll-list > li');
 const prevButton = document.querySelector('#arrow-prev');
+const prevButtonMobile = document.querySelector('#arrow-prev-mobile');
 const nextButton = document.querySelector('#arrow-next');
+const nextButtonMobile = document.querySelector('#arrow-next-mobile');
 
 nextButton.addEventListener('click', pressNext);
+nextButtonMobile.addEventListener('click', pressNext);
 
 prevButton.addEventListener('click', pressPrevious);
+prevButtonMobile.addEventListener('click', pressPrevious);
 
 
 function pressNext(){
@@ -120,7 +126,9 @@ function pressNext(){
     }
     pressBottomSlider(currentSlideIndex);
     console.log(currentSlideIndex);
-    offsetFromTopHeader(-1);
+    if(!isMobile()){
+        offsetFromTopHeader(-1);
+    }
 }
 function pressPrevious(){
     arrowButtonIsPressed = true;
@@ -134,5 +142,7 @@ function pressPrevious(){
     }
     pressBottomSlider(currentSlideIndex);
     console.log(currentSlideIndex);
-    offsetFromTopHeader(-1);
+    if(!isMobile()){
+        offsetFromTopHeader(-1);
+    }
 }

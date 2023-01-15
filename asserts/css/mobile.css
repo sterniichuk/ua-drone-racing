@@ -346,7 +346,55 @@
         display: block;
     }
     .info-block{
-        display: none;
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        bottom: 6%;
+        z-index: 50;
+        box-shadow: 0 23px 20px 1px #ffffffcc;
+        background: linear-gradient(180deg, rgba(255, 0, 0, 0) 0%, rgba(255, 255, 255, 0.2) 34.9%), linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.76) 68.23%);
+    }
+    .info-block > *{
+        margin-inline: auto;
+        padding: 2%;
+    }
+    .text-info-of-node{
+        display: block;
+        height: 50%;
+        color: #FFFFFF;
+        overflow: hidden;
+    }
+    .text-info-of-node h3{
+        text-align: center;
+        letter-spacing: -0.165px;
+        font-weight: 700;
+        font-size: 2rem;
+        color: #292D3C;
+    }
+    .text-info-of-node p{
+        font-weight: 700;
+        font-size: 1.3rem;
+        line-height: 90%;
+        text-align: justify;
+        letter-spacing: -0.165px;
+        color: #292D3C;
+    }
+    .more-join-block{
+        height: 50%;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+    .more-join-block > button{
+        margin: 0;
+        height: 50%;
+        width: 100%;
+    }
+    .more-join-block > button > span{
+        height: 100%;
+        border-radius: 0;
+        font-size: 123%;
     }
     .slide-arrow{
         display: none;
@@ -358,10 +406,9 @@
     .mobile-scroll-header{
         width: 100vw;
         height: var(--mobile-scroll-header-height);
-        justify-content: center;
+        justify-content: space-around;
         /* margin-inline: auto; */
         position: relative;
-        margin-block: 2%;
     }
     .mobile-scroll-header > .c1k21r5l{
         position: absolute;
@@ -388,7 +435,11 @@
         padding: 0;
     }
     .scroll-list > li > div{
+        /* justify-content: center; */
         width: 100%;
+        position: relative;
+        /* align-items: center; */
+        display: flex;
     }
     .scroll-list > li > div > img{
     }
@@ -408,12 +459,21 @@
         /*justify-content: center;*/
         /*align-items: center;*/
     }
-
+    .scroll-list > li{
+        height: fit-content;
+    }
     #horizontal-scroll-list-of-tournaments > li > div > span{
         font-size: calc(var(--mobile-bottom-scroll-height) / 2);
     }
-
-
+    .slide-arrow-mobile{
+        display: block;
+        height: 76%;
+        background: none;
+        border: none;
+    }
+    .slide-arrow-mobile > img{
+        height: 100%;
+    }
 
     /*scroll end*/
 
