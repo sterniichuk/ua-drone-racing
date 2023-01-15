@@ -19,22 +19,8 @@ function isMobile(){
     const width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
     return (width <= 767);
 }
-// function setOffsetForDesktopLinks(massive){
-//     const length = massive.length;
-//     for (let i = 0; i < length; i++) {
-//         let element = massive[i];
-//         setOffsetForDesktopLink(element);
-//         console.log(element);
-//     }
-// }
-// setOffsetForDesktopLinks(document.querySelectorAll('nav > ul > li > a'));
-// function setOffsetForDesktopLink(element){
-//     element.addEventListener('click', ()=>{
-//         window.scroll(0, 0);
-//     });
-// }
 
-function setHeightOfSections(){
+function resize(){
     const heightOfHeader = header.offsetHeight;
     for (let j = 0; j < sections.length; j++) {
         const section = sections[j];
@@ -47,11 +33,12 @@ function setHeightOfSections(){
     if(isMobile()){
         heroSection.style.height = "calc(100vh - " + heightOfHeader + "px)";
         heroSection.style.top = heightOfHeader + "px)";
+
     }
 }
-setHeightOfSections();
+resize();
 
-window.addEventListener('resize', setHeightOfSections);
+window.addEventListener('resize', resize);
 
 function offsetFromTopHeader(sign){
     const y = window.scrollY + sign * header.offsetHeight;

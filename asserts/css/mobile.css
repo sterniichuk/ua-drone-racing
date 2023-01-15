@@ -371,6 +371,8 @@
         letter-spacing: -0.165px;
         font-weight: 700;
         font-size: 2rem;
+        background: radial-gradient(#ffffff82, #ffffff00);
+        box-shadow: 0 1px 9px 1px #ffffff1f;
         color: #292D3C;
     }
     .text-info-of-node p{
