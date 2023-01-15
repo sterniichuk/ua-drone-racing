@@ -329,7 +329,7 @@
     width: 100%;
     z-index: 99;
 }
-.UICheckbox-input:checked~.UICheckbox-fauxInput {
+.UICheckbox-input:checked~.gold-check-box {
     border-color: #ffcd1f;
 }
 .UICheckbox-label {
@@ -350,7 +350,7 @@
     position: relative;
 }
 
-.UICheckbox-fauxInput {
+.gold-check-box {
     border: 0.125rem solid #000000;
     display: block;
     float: left;
@@ -360,7 +360,7 @@
     transition: all .12s cubic-bezier(.47,0,.745,.715);
     width: 1.25rem;
 }
-.UICheckbox-fauxInput:after {
+.gold-check-box:after {
     border: solid #ffcd1f;
     border-width: 0 0 0.125rem 0.125rem;
     box-sizing: initial;
@@ -376,7 +376,7 @@
     transition: all .12s cubic-bezier(.47,0,.745,.715);
     width: 50%;
 }
-.UICheckbox-input:checked~.UICheckbox-fauxInput:after {
+.UICheckbox-input:checked~.gold-check-box:after {
     opacity: 1;
 }
 /*sign-up end*/

@@ -1,8 +1,7 @@
-// import {signUpIsSelected, logInIsSelected} from "./log-in";
-
 const noneState = "none";
 const mobileMenuClassName = "mobile-menu";
 const main = "main";
+
 const horizontalScrollList = document.querySelectorAll('#horizontal-scroll-list-of-tournaments > li');
 const allImg = document
     .querySelectorAll('#horizontal-scroll-list-of-tournaments > li > img');
@@ -115,6 +114,8 @@ function switchState(className) {
     switchStateSpec(className, initialState);
 }
 
+
+//carousel
 const slidesContainer = document.querySelector('#scroll-list');
 const slides = slidesContainer.querySelectorAll('#scroll-list > li');
 const prevButton = document.querySelector('#arrow-prev');
@@ -127,7 +128,6 @@ nextButtonMobile.addEventListener('click', pressNext);
 
 prevButton.addEventListener('click', pressPrevious);
 prevButtonMobile.addEventListener('click', pressPrevious);
-
 
 function pressNext(){
     arrowButtonIsPressed = true;

@@ -53,7 +53,6 @@ function toggleOpacityById(idName, value) {
     element.style.opacity = value;
 }
 
-
 function headlineSignUpOn() {
     headlineOfSignUp.style.color = activeColorText;
 }
