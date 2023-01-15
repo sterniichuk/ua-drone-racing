@@ -16,7 +16,8 @@
 }
 
 .cefz98 {
-    display: block;
+    display: flex;
+    justify-content: center;
     left: 0;
     padding: 0.5rem;
     position: sticky;
@@ -327,7 +328,12 @@
 
     /*shadows*/
     /*scroll*/
-
+    #tournaments{
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+        display: block;
+    }
     .node img{
         width: 100%;
         height: 75%;
@@ -372,12 +378,25 @@
     }
 
     .slider-wrapper-mobile{
+        width: inherit;
         height: calc(100vh - var(--mobile-scroll-header-height) - var(--mobile-bottom-scroll-height));
+        /*height: fit-content;*/
+    }
+    #scroll-list{
+        width: 100%;
+        height: 90%;
+        padding: 0;
+    }
+    .scroll-list > li > div{
+        width: 100%;
+    }
+    .scroll-list > li > div > img{
     }
     .horizontal-scroll-bottom-area{
         position: relative;
         overflow: hidden;
-        display: flex;
+        /*display: flex;*/
+        display: none;
         height: var(--mobile-bottom-scroll-height);
     }
     #horizontal-scroll-list-of-tournaments > li{

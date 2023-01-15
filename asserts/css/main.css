@@ -520,9 +520,6 @@ main {
 }
 
 /*details end*/
-.mobile-scroll-header{
-    display: none;
-}
 /*main end*/
 @media (min-width: 768px) {
     .row-in-desktop {
